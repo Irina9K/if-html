@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: #f5bd41;
+  margin-bottom: 85px;
+}
+
+.image {
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-bottom: 48px;
+}
+
+.images {
+  margin-left: 105px;
+}
+
+.offer-text {
+  margin-left: 181px;
+  font-size: 24px;
+}
+.text1,
+.text2,
+.text3,
+.text4 {
+  display: inline-block;
+  width: 296px;
+}
+.text3 {
+  padding-left: 60px;
+}
+
+.text4 {
+  padding-left: 60px;
+}
