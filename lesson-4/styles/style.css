@@ -4,6 +4,7 @@
 body {
   width: 1440px;
   margin: 0 auto;
+  color: #383838;
 }
 
 h2 {
@@ -11,6 +12,7 @@ h2 {
   margin: 120px auto 20px auto;
   font-size: 40px;
   text-align: center; /*i am not sure i need it, but it looks better on the page */
+
 }
 
 hr {
