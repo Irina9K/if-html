@@ -2,16 +2,15 @@
   box-sizing: border-box;
 }
 body {
-    width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 
-h2{
-  width:340px;
-  height: 47px;
+h2 {
+  width: 340px;
   margin: 120px auto 20px auto;
   font-size: 40px;
-  text-align: center;
+  text-align: center; /*i am not sure i need it, but it looks better on the page */
 }
 
 hr {
@@ -27,50 +26,22 @@ hr {
 .booking,
 .reviews {
   width: 296px;
-  height: 178px;
+  margin: 0 auto;
   float: left;
-  margin-left: 104px;
-}
-.support {
-  padding-left: 106px;
 }
 
-.booking {
-  margin-left: 34px;
-  width: 256px;
-}
-
-.reviews {
-  margin-left: 0;
-  padding-left: 40px;
-}
-
-.text1,
-.text2,
-.text3,
-.text4 {
-  display: inline-block;
-  width: 250px;
+span,
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   font-size: 24px;
 }
 
-img {
-  margin-bottom: 45px;
+.image {
+  margin-bottom: 55px;
 }
 
-.text1 {
-  margin-left: -30px;
+.support {
+  margin-left: 104px;
 }
-.text2 {
-  margin-left: -50px;
-}
-
-.text3 {
-  margin-left: -25px;
-}
-
-.text4 {
-  margin-left: -35px;
-}
-
-
