@@ -1,6 +1,14 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
+
 body {
   width: 1440px;
   margin: 0 auto;
@@ -12,6 +20,7 @@ h2 {
   margin: 120px auto 20px auto;
   font-size: 40px;
   text-align: center; /*i am not sure i need it, but it looks better on the page */
+  font-family: Roboto, sans-serif;
 }
 
 hr {
@@ -19,7 +28,7 @@ hr {
   height: 4px;
   background-color: #f5bd41;
   border: #f5bd41;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .support,
@@ -29,6 +38,8 @@ hr {
   width: 296px;
   margin: 0 auto;
   float: left;
+  font-family: Roboto;
+  font-weight: 400;
 }
 
 span,
@@ -40,7 +51,7 @@ img {
 }
 
 .image {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .support {
