@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  margin: 0 auto;
+  color: #383838;
+}
+
+h2 {
+  width: 340px;
+  margin: 120px auto 20px auto;
+  font-size: 40px;
+  text-align: center; /*i am not sure i need it, but it looks better on the page */
+}
+
+hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: #f5bd41;
+  margin-bottom: 85px;
+}
+
+.support,
+.communication,
+.booking,
+.reviews {
+  width: 296px;
+  margin: 0 auto;
+  float: left;
+}
+
+span,
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.image {
+  margin-bottom: 55px;
+}
+
+.support {
+  margin-left: 104px;
+}
