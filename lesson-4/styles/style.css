@@ -15,6 +15,10 @@
    color: #383838;
  }
  
+.container{
+   height: 569px;
+}
+
  h2 {
    width: 340px;
    margin: 120px auto 20px auto;
@@ -42,8 +46,8 @@
    font-weight: 400;
  }
  
- span,
- img {
+ .text,
+ .image {
    display: block;
    margin: 0 auto;
    text-align: center;
@@ -57,3 +61,42 @@
  .support {
    margin-left: 104px;
  }
+
+ .footer{
+    height: 630px;
+    background-color: #10367C;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    
+   }
+
+ .footer-parts{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 120px;
+   margin-left: 104px;
+   margin-right: 272px;
+ }
+
+.footer-item{
+display: block;
+padding-top: 24px;
+font-style: normal;
+}
+
+.footer-title {
+margin: 0;
+font-weight: 500;
+}
+
+.footer-property{
+margin-left: -55px;
+}
+
+.footer-copyright{
+   margin-top: 65px;
+   margin-left: 104px;
+font-size: 14px;
+}
