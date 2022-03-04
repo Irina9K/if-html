@@ -1,3 +1,10 @@
 {
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.formatOnSave": true,
+   "[html]": {
+      "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+   },
+   "[css]": {
+      "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+   }
 }
