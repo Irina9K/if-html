@@ -1,14 +1,16 @@
 @font-face {
-<<<<<<< HEAD
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff2');
-=======
-  font-family: Roboto;
-  src: url("../fonts/Roboto-Medium.woff");
->>>>>>> 2490170e95831101e139ab12046827684ef04c42
-  font-weight: 500;
-  font-style: normal;
-}
+   font-family: 'Roboto';
+   src: url('../fonts/Roboto-Medium.woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
 
 * {
   box-sizing: border-box;
@@ -29,12 +31,8 @@ h2 {
   margin: 120px auto 20px auto;
   font-size: 40px;
   text-align: center; /*i am not sure i need it, but it looks better on the page */
-<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
-=======
-  font-family: Roboto, sans-serif;
->>>>>>> 2490170e95831101e139ab12046827684ef04c42
-}
+  }
 
 hr {
   width: 100px;
@@ -51,12 +49,8 @@ hr {
   width: 296px;
   margin: 0 auto;
   float: left;
-<<<<<<< HEAD
   font-family: 'Roboto', sans-serif;
-=======
-  font-family: Roboto sans-serif;
->>>>>>> 2490170e95831101e139ab12046827684ef04c42
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .text,
