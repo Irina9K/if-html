@@ -1,0 +1,108 @@
+@font-face {
+   font-family: 'Roboto';
+   src: url('../fonts/Roboto-Medium.woff2');
+   font-weight: 500;
+   font-style: normal;
+ }
+ 
+ @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  color: #383838;
+}
+
+.container {
+  height: 569px;
+}
+
+h2 {
+  width: 340px;
+  margin: 120px auto 20px auto;
+  font-size: 40px;
+  text-align: center; /*i am not sure i need it, but it looks better on the page */
+  font-family: 'Roboto', sans-serif;
+  }
+
+hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: #f5bd41;
+  margin-bottom: 80px;
+}
+
+.support,
+.communication,
+.booking,
+.reviews {
+  width: 296px;
+  margin: 0 auto;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.text,
+.image {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+.image {
+  margin-bottom: 45px;
+}
+
+.support {
+  margin-left: 104px;
+}
+
+.footer {
+  height: 630px;
+  background-color: #10367c;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer-parts {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  margin-left: 104px;
+  margin-right: 272px;
+}
+
+.footer-item {
+  display: block;
+  padding-top: 24px;
+  font-style: normal;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer-property {
+  margin-left: -55px;
+}
+
+.footer-copyright {
+  margin-top: 65px;
+  margin-left: 104px;
+  font-size: 14px;
+}
