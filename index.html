@@ -15,11 +15,13 @@
           <div class="header-links">
             <a class="header-link" href="#">Stays</a>
             <a class="header-link" href="#">Attractions</a>
-            <img
-              class="header-night"
-              src="./images/svg/night.svg"
-              alt="night"
-            />
+            <button class="header-button_light">
+              <img
+                class="header-night"
+                src="./images/svg/night.svg"
+                alt="night"
+              />
+            </button>
             <img
               class="header-account"
               src="./images/svg/accountcircle.svg"
@@ -27,7 +29,6 @@
             />
           </div>
         </div>
-
         <h1 class="header-name">
           Discover stays<br />
           to live, work or just relax
@@ -36,10 +37,41 @@
           <span>Your destination or hotel name</span>
           <span>Check-in &#8211; Check-out</span>
         </div>
-        iij
-        <div class="header-choice"></div>
+        <div class="header-choice">
+          <form class="input-group">
+            <label class="input-group_label" for="city"> </label>
+            <input
+              class="input-group_input header-choice_city"
+              type="search"
+              id="city"
+              name="city"
+              placeholder="New York"
+            />
+            <label class="input-group_label" for="data"></label>
+            <input
+              class="input-group_input header-choice_data"
+              type="date"
+              id="data"
+              name="data"
+            />
+            <label class="input-group_label" for="people-room"> </label>
+            <input
+              class="input-group_input header-choice_people"
+              type="text"
+              id="people-room"
+              name="people-room"
+              placeholder="2 Adults &#8211; 0 Children &#8211; 1 Room"
+            />
+            <button class="header-button">Search</button>
+          </form>
+        </div>
         <div class="header-app">
-          <img src="" alt="" />
+          <a href="#" class="header-app_link">
+            <img src="./images/png/google_play.png" alt="google_play" />
+          </a>
+          <a href="#" class="header-app_link">
+            <img src="./images/png/app_store.png" alt="app_store" />
+          </a>
         </div>
       </div>
     </div>
