@@ -17,19 +17,19 @@
 }
 
 body {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
   color: #383838;
 }
 
 .header {
-  max-width: 1440px;
+  width: 1440px;
   background-image: url("../images/png/castelmezzano.png");
   background-repeat: no-repeat;
 }
 
 .header-container {
-  min-height: 900px;
+  height: 900px;
   padding: 51px 104px;
 }
 .header-hat {
@@ -86,7 +86,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 50px;
-  padding-top: 163px;
+  padding-top: 165px;
   color: #ffffff;
 }
 
@@ -105,23 +105,23 @@ body {
   padding-right: 217px;
 }
 
+/*start variant_2*/
+
 .input-group {
   display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
-  border: 3px solid #f3f3f4;
-  border-top: 0;
-  border-right: 0;
-  border-radius: 8px;
-  max-width: 1232px;
-  height: 64px;
+  justify-content: flex-start;
   margin-bottom: 120px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .input-group_input {
-  border-radius: 8px 0 0 8px;
-  height: 64px;
-  padding: 0;
+  padding-left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #383838;
 }
 
 .input-group_input:focus {
@@ -132,44 +132,43 @@ body {
 }
 
 .header-choice_city {
-  width: 461px;
+  width: 467px;
+  border-radius: 8px 0 0 8px;
+  border-left: 3px solid #f3f3f4;
+  border-right: 0 solid;
 }
 
 .header-choice_data {
-  width: 253px;
+  width: 259px;
 }
 
 .header-choice_people {
-  width: 305px;
+  width: 314px;
+}
+
+.header-choice_people,
+.header-choice_data {
+  border-right: 0 solid;
+  border-left: 0 solid;
 }
 
 .header-choice_city,
 .header-choice_people,
 .header-choice_data {
-  margin-left: -3px;
-  padding-left: 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: #383838;
-  background-color: rgba(0, 0, 0, 0);
-  border: rgba(0, 0, 0, 0);
+  height: 64px;
   border-top: 3px solid #f3f3f4;
+  border-bottom: 3px solid #f3f3f4;
 }
 
 .header-button {
-  padding: 0;
   width: 192px;
-  height: 64px;
   color: #ffffff;
   background-color: #3077c6;
-  text-align: center;
-  border: 0 solid #3077c6;
   border-radius: 8px;
+  border: 0;
   font-size: 24px;
-  cursor: pointer;
 }
+/*end variant_2*/
 
 .header-app {
   display: flex;
