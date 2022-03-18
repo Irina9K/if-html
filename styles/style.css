@@ -22,8 +22,10 @@ body {
   color: #383838;
 }
 
-.header {
+.container {
   width: 1440px;
+}
+.header {
   background-image: url("../images/png/castelmezzano.png");
   background-repeat: no-repeat;
 }
@@ -32,53 +34,67 @@ body {
   min-height: 900px;
   padding: 51px 104px;
 }
-.header-hat {
+
+.section-header_top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.header-link {
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 7px;
+}
+
+.nav-link {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
-  padding-top: 5px;
+  border-bottom: 4px solid transparent;
   padding-bottom: 10px;
 }
 
-.header-link:focus {
+.nav-link:focus {
   border-bottom: 4px solid #f5bd41;
 }
 
-.header-link:hover {
+.nav-link:hover {
   border-bottom: 4px solid #f5bd41;
 }
 
-.header-link:nth-child(1) {
+.nav-link:nth-child(1) {
   margin-right: 25px;
 }
 
-.header-links {
-  display: flex;
-  align-items: center;
-}
-
-.header-night {
-  padding-left: 50px;
+.nav {
+  margin-left: auto;
+  padding-right: 20px;
 }
 
 .header-button_light {
   padding: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border: 0;
   cursor: pointer;
+  padding-right: 22px;
 }
 
 .header-account {
-  padding-left: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.header-account:hover {
+  filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+    brightness(95%) contrast(102%);
+}
+
+.section-header_top {
+  margin-bottom: 191px;
 }
 
 .header-name {
@@ -86,12 +102,11 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 50px;
-  padding-top: 165px;
   color: #ffffff;
 }
 
 .header-inscription {
-  padding-top: 64px;
+  padding-top: 55px;
   padding-left: 25px;
   padding-bottom: 25px;
   font-family: "Roboto", sans-serif;
@@ -173,7 +188,7 @@ body {
 .header-app {
   display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 0, 0);
+  background-color: transparent;
 }
 
 .header-app_link:nth-child(2) {
