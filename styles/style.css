@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.woff2');
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-   font-family: 'Roboto';
-   src: url('../fonts/Roboto-Regular.woff2');
-   font-weight: 400;
-   font-style: normal;
- }
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -23,6 +23,191 @@ body {
 }
 
 .container {
+  width: 1440px;
+}
+.header {
+  background-image: url("../images/png/castelmezzano.png");
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  min-height: 900px;
+  padding: 51px 104px;
+}
+
+.section-header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 7px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 10px;
+}
+
+.nav-link:focus {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.nav-link:hover {
+  border-bottom: 4px solid #f5bd41;
+}
+
+.nav-link:nth-child(1) {
+  margin-right: 25px;
+}
+
+.nav {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.header-button_light {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding-right: 22px;
+}
+
+.header-account {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-night,
+.header-account,
+.nav-link {
+  transition: 0.3s;
+}
+
+.header-account:hover {
+  filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+    brightness(95%) contrast(102%);
+}
+
+.header-night:hover {
+  filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+    brightness(95%) contrast(102%);
+}
+
+.section-header_top {
+  margin-bottom: 191px;
+}
+
+.header-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 98px;
+}
+
+.input-group_label {
+  color: #ffffff;
+  padding-left: 25px;
+}
+
+.input1, .input2, .input3 {
+  background-color: white;
+  margin-top: 22px;
+}
+
+.input1{
+     border-radius: 8px 0 0 8px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 120px;
+}
+
+.input-group_input,
+.input-group_label {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input-group_input {
+  padding-left: 24px;
+  color: #383838;
+  /*margin-top: 24px;*/
+}
+
+.input-group_input:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.header-choice_city {
+  width: 467px;
+  border-radius: 8px 0 0 8px;
+  border-left: 3px solid #f3f3f4;
+  border-right: 0 solid;
+}
+
+.header-choice_data {
+  width: 259px;
+}
+
+.header-choice_people {
+  width: 314px;
+}
+
+.header-choice_people,
+.header-choice_data {
+  border-right: 0 solid;
+  border-left: 0 solid;
+}
+
+.header-choice_city,
+.header-choice_people,
+.header-choice_data {
+  height: 64px;
+  border-top: 3px solid #f3f3f4;
+  border-bottom: 3px solid #f3f3f4;
+}
+
+.header-button {
+  height: 64px;
+  width: 192px;
+  color: #ffffff;
+  background-color: #3077c6;
+  border-radius: 8px;
+  border: 0;
+  font-size: 24px;
+  margin-top: 43px;
+}
+
+.header-app {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.header-app_link:nth-child(2) {
+  margin-left: 16px;
+}
+
+.container {
   height: 569px;
 }
 
@@ -31,7 +216,7 @@ h2 {
   margin: 120px auto 20px auto;
   font-size: 40px;
   text-align: center; /*i am not sure i need it, but it looks better on the page */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -49,7 +234,7 @@ hr {
   width: 296px;
   margin: 0 auto;
   float: left;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -73,7 +258,7 @@ hr {
   height: 630px;
   background-color: #10367c;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }

@@ -3,62 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>lesson-4</title>
+    <title>lesson-6</title>
   </head>
   <body>
-    <div class="container">
-      <div class="title">
-        <h2>What do we offer</h2>
-        <hr />
+    <header class="header">
+      <div class="container header-container">
+        <section class="section section-header_top">
+          <div class="header-logo">
+            <img src="./images/svg/logo_vector.svg" alt="logo" />
+          </div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#">Stays</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Attractions</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-light">
+            <button class="header-button_light">
+              <img
+                class="header-night"
+                src="./images/svg/night.svg"
+                alt="night"
+              />
+            </button>
+            <img
+              class="header-account"
+              src="./images/svg/accountcircle.svg"
+              alt="account"
+            />
+          </div>
+        </section>
+        <section class="section section-header_foundation">
+          <h1 class="header-name">
+            Discover stays<br />
+            to live, work or just relax
+          </h1>
+
+          <form class="input-group">
+            <div class="container-forms">
+              <label class="input-group_label" for="city">
+                Your destination or hotel name
+              </label>
+              <div class="input1">
+                <input
+                  class="input-group_input header-choice_city"
+                  type="search"
+                  id="city"
+                  name="city"
+                  placeholder="New York"
+                />
+              </div>
+            </div>
+
+            <div class="container-forms">
+              <label class="input-group_label" for="data"
+                >Check-in &#8211; Check-out
+              </label>
+              <div class="input2">
+                <input
+                  class="input-group_input header-choice_data"
+                  type="date"
+                  id="data"
+                  name="data"
+                />
+              </div>
+            </div>
+            <div class="container-forms">
+              <label class="input-group_label" for="people-room"> </label><br />
+              <div class="input3">
+                <input
+                  class="input-group_input header-choice_people"
+                  type="text"
+                  id="people-room"
+                  name="people-room"
+                  placeholder="2 Adults &#8211; 0 Children &#8211; 1 Room"
+                />
+              </div>
+            </div>
+            <div class="container-button">
+              <button class="header-button">Search</button>
+            </div>
+          </form>
+
+          <div class="header-app">
+            <a href="#" class="header-app_link">
+              <img src="./images/png/google_play.png" alt="google_play" />
+            </a>
+            <a href="#" class="header-app_link">
+              <img src="./images/png/app_store.png" alt="app_store" />
+            </a>
+          </div>
+        </section>
       </div>
-      <div class="support">
-        <img class="image" src="./images/support.png" alt="support" />
-        <span class="text">Support 24/7</span>
-      </div>
-      <div class="communication">
-        <img
-          class="image"
-          src="./images/communication.png"
-          alt="communication"
-        />
-        <span class="text">Communicate directly</span>
-      </div>
-      <div class="booking">
-        <img class="image" src="./images/booking.png" alt="booking" />
-        <span class="text">Book online</span>
-      </div>
-      <div class="reviews">
-        <img class="image" src="./images/reviews.png" alt="reviews" />
-        <span class="text">Real guest reviews</span>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-parts">
-        <div class="footer-about">
-          <h4 class="footer-title">About</h4>
-          <span class="footer-item">How Triphouse works</span>
-          <span class="footer-item">Careers</span>
-          <span class="footer-item">Privacy</span>
-          <span class="footer-item">Terms</span>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <div class="title">
+          <h2>What do we offer</h2>
+          <hr />
         </div>
-        <div class="footer-property">
-          <h4 class="footer-title">Property types</h4>
-          <span class="footer-item">Guest houses</span>
-          <span class="footer-item">Hotels</span>
-          <span class="footer-item">Apartments</span>
-          <span class="footer-item">Villas</span>
-          <span class="footer-item">Holiday homes</span>
-          <span class="footer-item">Hostels</span>
+        <div class="support">
+          <img class="image" src="./images/png/support.png" alt="support" />
+          <span class="text">Support 24/7</span>
         </div>
-        <div class="footer-support">
-          <h4 class="footer-title">Support</h4>
-          <span class="footer-item">Contact Customer Service</span>
-          <span class="footer-item">FAQ</span>
+        <div class="communication">
+          <img
+            class="image"
+            src="./images/png/communication.png"
+            alt="communication"
+          />
+          <span class="text">Communicate directly</span>
+        </div>
+        <div class="booking">
+          <img class="image" src="./images/png/booking.png" alt="booking" />
+          <span class="text">Book online</span>
+        </div>
+        <div class="reviews">
+          <img class="image" src="./images/png/reviews.png" alt="reviews" />
+          <span class="text">Real guest reviews</span>
         </div>
       </div>
-      <p class="footer-copyright">
-        &#169; 2020 Triphouse, Inc. All rights reserved
-      </p>
-    </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-parts">
+          <div class="footer-about">
+            <h4 class="footer-title">About</h4>
+            <span class="footer-item">How Triphouse works</span>
+            <span class="footer-item">Careers</span>
+            <span class="footer-item">Privacy</span>
+            <span class="footer-item">Terms</span>
+          </div>
+          <div class="footer-property">
+            <h4 class="footer-title">Property types</h4>
+            <span class="footer-item">Guest houses</span>
+            <span class="footer-item">Hotels</span>
+            <span class="footer-item">Apartments</span>
+            <span class="footer-item">Villas</span>
+            <span class="footer-item">Holiday homes</span>
+            <span class="footer-item">Hostels</span>
+          </div>
+          <div class="footer-support">
+            <h4 class="footer-title">Support</h4>
+            <span class="footer-item">Contact Customer Service</span>
+            <span class="footer-item">FAQ</span>
+          </div>
+        </div>
+        <p class="footer-copyright">
+          &#169; 2020 Triphouse, Inc. All rights reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
