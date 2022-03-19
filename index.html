@@ -35,19 +35,18 @@
             />
           </div>
         </section>
-
         <section class="section section-header_foundation">
           <h1 class="header-name">
             Discover stays<br />
             to live, work or just relax
           </h1>
-          <div class="header-inscription">
-            <span>Your destination or hotel name</span>
-            <span>Check-in &#8211; Check-out</span>
-          </div>
-          <div class="header-choice">
-            <form class="input-group">
-              <label class="input-group_label" for="city"> </label>
+
+          <form class="input-group">
+
+            <div class="container-forms">
+              <label class="input-group_label" for="city">
+                Your destination or hotel name </label
+              >
               <input
                 class="input-group_input header-choice_city"
                 type="search"
@@ -55,14 +54,21 @@
                 name="city"
                 placeholder="New York"
               />
-              <label class="input-group_label" for="data"></label>
+            </div>
+
+            <div class="container-forms">
+              <label class="input-group_label" for="data"
+                >Check-in &#8211; Check-out </label
+              >
               <input
                 class="input-group_input header-choice_data"
                 type="date"
                 id="data"
                 name="data"
               />
-              <label class="input-group_label" for="people-room"> </label>
+            </div>
+            <div class="container-forms">
+              <label class="input-group_label" for="people-room"> </label><br />
               <input
                 class="input-group_input header-choice_people"
                 type="text"
@@ -70,9 +76,12 @@
                 name="people-room"
                 placeholder="2 Adults &#8211; 0 Children &#8211; 1 Room"
               />
+            </div>
+            <div class="container-button">
               <button class="header-button">Search</button>
-            </form>
-          </div>
+            </div>
+          </form>
+
           <div class="header-app">
             <a href="#" class="header-app_link">
               <img src="./images/png/google_play.png" alt="google_play" />

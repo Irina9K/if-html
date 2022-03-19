@@ -103,40 +103,33 @@ body {
   font-style: normal;
   font-size: 50px;
   color: #ffffff;
+  margin-bottom: 98px;
 }
 
-.header-inscription {
-  padding-top: 55px;
-  padding-left: 25px;
-  padding-bottom: 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
+.input-group_label {
   color: #ffffff;
+  padding-left: 25px;
 }
-
-.header-inscription span:nth-child(1) {
-  padding-right: 217px;
-}
-
-/*start variant_2*/
 
 .input-group {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 120px;
-  background-color: #ffffff;
-  border-radius: 8px;
+
 }
 
-.input-group_input {
-  padding-left: 24px;
+.input-group_input,
+.input-group_label {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
+}
+
+.input-group_input {
+  padding-left: 24px;
   color: #383838;
+  margin-top: 24px;
 }
 
 .input-group_input:focus {
@@ -176,14 +169,15 @@ body {
 }
 
 .header-button {
+  height: 64px;
   width: 192px;
   color: #ffffff;
   background-color: #3077c6;
   border-radius: 8px;
   border: 0;
   font-size: 24px;
+  margin-top: 45px;
 }
-/*end variant_2*/
 
 .header-app {
   display: flex;
