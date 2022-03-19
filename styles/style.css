@@ -85,10 +85,20 @@ body {
 .header-account {
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.header-night,
+.header-account,
+.nav-link {
   transition: 0.3s;
 }
 
 .header-account:hover {
+  filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+    brightness(95%) contrast(102%);
+}
+
+.header-night:hover {
   filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
     brightness(95%) contrast(102%);
 }
@@ -115,7 +125,6 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 120px;
-
 }
 
 .input-group_input,
