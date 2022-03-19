@@ -14,6 +14,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -49,7 +50,6 @@ body {
 
 .nav-link {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
@@ -75,11 +75,14 @@ body {
 }
 
 .header-button_light {
-  padding: 0;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  padding-right: 22px;
+  padding-right: 25px;
+}
+
+.header-light {
+  display: flex;
 }
 
 .header-account {
@@ -108,7 +111,6 @@ body {
 }
 
 .header-name {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 50px;
@@ -121,13 +123,15 @@ body {
   padding-left: 25px;
 }
 
-.input1, .input2, .input3 {
+.input1,
+.input2,
+.input3 {
   background-color: white;
   margin-top: 22px;
 }
 
-.input1{
-     border-radius: 8px 0 0 8px;
+.input1 {
+  border-radius: 8px 0 0 8px;
 }
 
 .input-group {
@@ -138,7 +142,6 @@ body {
 
 .input-group_input,
 .input-group_label {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -147,7 +150,6 @@ body {
 .input-group_input {
   padding-left: 24px;
   color: #383838;
-  /*margin-top: 24px;*/
 }
 
 .input-group_input:focus {
@@ -161,7 +163,7 @@ body {
   width: 467px;
   border-radius: 8px 0 0 8px;
   border-left: 3px solid #f3f3f4;
-  border-right: 0 solid;
+  border-right: 0;
 }
 
 .header-choice_data {
@@ -174,8 +176,8 @@ body {
 
 .header-choice_people,
 .header-choice_data {
-  border-right: 0 solid;
-  border-left: 0 solid;
+  border-right: 0 ;
+  border-left: 0 ;
 }
 
 .header-choice_city,
@@ -216,7 +218,6 @@ h2 {
   margin: 120px auto 20px auto;
   font-size: 40px;
   text-align: center; /*i am not sure i need it, but it looks better on the page */
-  font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -234,7 +235,6 @@ hr {
   width: 296px;
   margin: 0 auto;
   float: left;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -258,7 +258,6 @@ hr {
   height: 630px;
   background-color: #10367c;
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
 }
