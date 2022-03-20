@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  /*width: 1440px;*/
 }
 .header {
   background-image: url("../images/png/castelmezzano.png");
@@ -229,24 +229,37 @@ hr {
   margin-bottom: 80px;
 }
 
-.main__offer--img,
-.main__offer--name {
+.main__offer--parts {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 181px;
+  padding-right: 139px;
 }
 
-.main__offer--img {
-  margin-bottom: 50px;
-  margin-right: 205px;
-  margin-left: 205px;
-}
-
-.main__offer--name {
+.text {
   font-size: 24px;
   font-weight: 400;
-  margin-left: 180px;
-  margin-right: 152px;
+}
+
+.main__support,
+.main__communication,
+.main__booking,
+.main__reviews {
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap: wrap;*/
+  justify-content: center;
+}
+
+.image {
+  display: block;
+  margin: 0 auto 49px auto;
+  width: 100px;
+  height: 100px;
+}
+
+.main__support {
+  margin-right: -20px;
 }
 
 .footer {
