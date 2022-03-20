@@ -176,8 +176,8 @@ body {
 
 .header-choice_people,
 .header-choice_data {
-  border-right: 0 ;
-  border-left: 0 ;
+  border-right: 0;
+  border-left: 0;
 }
 
 .header-choice_city,
@@ -209,15 +209,16 @@ body {
   margin-left: 16px;
 }
 
-.container {
+.main__offer {
   height: 569px;
 }
 
 h2 {
-  width: 340px;
-  margin: 120px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 85px;
   font-size: 40px;
-  text-align: center; /*i am not sure i need it, but it looks better on the page */
+  margin-bottom: 20px;
 }
 
 hr {
@@ -228,30 +229,24 @@ hr {
   margin-bottom: 80px;
 }
 
-.support,
-.communication,
-.booking,
-.reviews {
-  width: 296px;
-  margin: 0 auto;
-  float: left;
-  font-weight: 400;
+.main__offer--img,
+.main__offer--name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.text,
-.image {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.main__offer--img {
+  margin-bottom: 50px;
+  margin-right: 205px;
+  margin-left: 205px;
+}
+
+.main__offer--name {
   font-size: 24px;
-}
-
-.image {
-  margin-bottom: 45px;
-}
-
-.support {
-  margin-left: 104px;
+  font-weight: 400;
+  margin-left: 180px;
+  margin-right: 152px;
 }
 
 .footer {
@@ -289,4 +284,7 @@ hr {
   margin-top: 65px;
   margin-left: 104px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1180px) {
 }
