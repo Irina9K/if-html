@@ -338,4 +338,44 @@ hr {
     width: 70px;
     height: 70px;
   }
+
+  .footer {
+    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-repeat: no-repeat;
+    background-position: top 40px center;
+    /*background-size: cover;*/
+    height: 203px;
+  }
+
+  .footer-parts {
+    justify-content: space-between;
+    padding-top: 90px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 67px;
+    padding-right: 67px;
+    text-decoration: underline;
+  }
+
+  .footer-title{
+    font-size: 15px;
+    /*padding-left: 67px;*/
+  }
+
+  .footer-item{
+  display: none;
+  }
+
+  .footer-property {
+    margin-left: 0;
+  }
+
+  .footer-copyright {
+    margin-top: 32px;
+    margin-left: 71px;
+    font-size: 12px;
+  }
+
 }
+
+
