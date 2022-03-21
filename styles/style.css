@@ -36,6 +36,11 @@ body {
   padding: 51px 104px;
 }
 
+.logo_vector{
+  width: 205px;
+  height: 40px;
+}
+
 .section-header_top {
   display: flex;
   justify-content: space-between;
@@ -84,24 +89,31 @@ body {
 .header-light {
   display: flex;
 }
+.icon_night{
+  width: 30px;
+  height: 30px;
+  }
 
-.header-account {
+.icon_account{
   background-size: contain;
   background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  fill: #ffffff;
 }
 
-.header-night,
-.header-account,
+.icon_night,
+.icon_account,
 .nav-link {
   transition: 0.3s;
 }
 
-.header-account:hover {
+.icon_account:hover {
   filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
     brightness(95%) contrast(102%);
 }
 
-.header-night:hover {
+.icon_night:hover {
   filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
     brightness(95%) contrast(102%);
 }
@@ -250,7 +262,7 @@ hr {
   justify-content: center;
 }
 
-.image {
+.icon_offer {
   display: block;
   margin: 0 auto 49px auto;
   width: 100px;
@@ -333,7 +345,7 @@ hr {
     font-size: 15px;
   }
 
-  .image {
+  .icon_offer {
     margin-bottom: 16px;
     width: 70px;
     height: 70px;
@@ -343,7 +355,6 @@ hr {
     background-image: url("../images/svg/logo_vector_footer.svg");
     background-repeat: no-repeat;
     background-position: top 40px center;
-    /*background-size: cover;*/
     height: 203px;
   }
 
