@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1232px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0;
 }
 
 .header {
@@ -244,7 +244,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*margin: 0 -8px;*/
+  margin: 0 -8px;
   align-items: center;
 }
 
@@ -364,6 +364,51 @@ hr {
 
 /*конец*/
 
+.main__homes {
+  height: 828px;
+  background-color: #EAF0F9;
+}
+
+.main__homes--hotel {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.main__russia,
+.main__spain,
+.main__slowakia,
+.main__germany {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 16px);
+  margin: 8px;
+  justify-content: center;
+}
+
+.title_homes {
+  margin-bottom: 76px;
+}
+
+.main__name--img,
+.main__name--country {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 24px;
+  text-align: left;
+}
+
+.main__name--img {
+  color: #3077c6;
+}
+
+.main__name--country {
+  color: #bfbfbf;
+  padding: 0;
+}
+
+
+
 /*.main__offer {*/
 /*  height: 569px;*/
 /*}*/
@@ -456,47 +501,47 @@ hr {
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {
-/*  .main__offer {*/
-/*    height: 641px;*/
-/*  }*/
+  /*  .main__offer {*/
+  /*    height: 641px;*/
+  /*  }*/
 
-/*  h2 {*/
-/*    padding-top: 35px;*/
-/*    font-size: 35px;*/
-/*  }*/
+  /*  h2 {*/
+  /*    padding-top: 35px;*/
+  /*    font-size: 35px;*/
+  /*  }*/
 
-/*  .main__offer--parts {*/
-/*    flex-wrap: wrap;*/
-/*    justify-content: center;*/
-/*    padding-left: 150px;*/
-/*    padding-right: 150px;*/
-/*    margin-bottom: 10px;*/
-/*  }*/
+  /*  .main__offer--parts {*/
+  /*    flex-wrap: wrap;*/
+  /*    justify-content: center;*/
+  /*    padding-left: 150px;*/
+  /*    padding-right: 150px;*/
+  /*    margin-bottom: 10px;*/
+  /*  }*/
 
-/*  .main__support,*/
-/*  .main__communication,*/
-/*  .main__booking,*/
-/*  .main__reviews {*/
-/*    text-align: center;*/
-/*    margin-bottom: 46px;*/
-/*    width: 250px;*/
-/*  }*/
+  /*  .main__support,*/
+  /*  .main__communication,*/
+  /*  .main__booking,*/
+  /*  .main__reviews {*/
+  /*    text-align: center;*/
+  /*    margin-bottom: 46px;*/
+  /*    width: 250px;*/
+  /*  }*/
 
-/*  .main__booking {*/
-/*    margin-left: -35px;*/
-/*  }*/
+  /*  .main__booking {*/
+  /*    margin-left: -35px;*/
+  /*  }*/
 
-/*  .main__reviews {*/
-/*    margin-left: -20px;*/
-/*  }*/
+  /*  .main__reviews {*/
+  /*    margin-left: -20px;*/
+  /*  }*/
 
-/*  .icon__offer {*/
-/*    margin-bottom: 25px;*/
-/*  }*/
+  /*  .icon__offer {*/
+  /*    margin-bottom: 25px;*/
+  /*  }*/
 
-/*  .text {*/
-/*    font-size: 20px;*/
-/*  }*/
+  /*  .text {*/
+  /*    font-size: 20px;*/
+  /*  }*/
 
   .footer__parts {
     margin-right: 104px;
@@ -516,39 +561,39 @@ hr {
 /*}*/
 
 @media screen and (max-width: 768px) {
-/*  .main__offer {*/
-/*    height: 641px;*/
-/*  }*/
-/*  h2 {*/
-/*    padding-top: 24px;*/
-/*    font-size: 28px;*/
-/*    margin-bottom: 33px;*/
-/*  }*/
+  /*  .main__offer {*/
+  /*    height: 641px;*/
+  /*  }*/
+  /*  h2 {*/
+  /*    padding-top: 24px;*/
+  /*    font-size: 28px;*/
+  /*    margin-bottom: 33px;*/
+  /*  }*/
 
-/*  hr {*/
-/*    display: none;*/
-/*  }*/
-/*  .main__offer--parts {*/
-/*    flex-direction: column;*/
-/*    padding-left: 73px;*/
-/*    padding-right: 73px;*/
-/*  }*/
+  /*  hr {*/
+  /*    display: none;*/
+  /*  }*/
+  /*  .main__offer--parts {*/
+  /*    flex-direction: column;*/
+  /*    padding-left: 73px;*/
+  /*    padding-right: 73px;*/
+  /*  }*/
 
-/*  .main__support,*/
-/*  .main__communication,*/
-/*  .main__booking,*/
-/*  .main__reviews {*/
-/*    text-align: center;*/
-/*    margin-bottom: 36px;*/
-/*  }*/
+  /*  .main__support,*/
+  /*  .main__communication,*/
+  /*  .main__booking,*/
+  /*  .main__reviews {*/
+  /*    text-align: center;*/
+  /*    margin-bottom: 36px;*/
+  /*  }*/
 
-/*  .main__support {*/
-/*    margin-right: 0;*/
-/*  }*/
+  /*  .main__support {*/
+  /*    margin-right: 0;*/
+  /*  }*/
 
-/*  .text {*/
-/*    font-size: 15px;*/
-/*  }*/
+  /*  .text {*/
+  /*    font-size: 15px;*/
+  /*  }*/
 
   /*.icon__offer {*/
   /*  margin-bottom: 16px;*/
