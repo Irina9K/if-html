@@ -360,13 +360,43 @@ hr {
     width: 70px;
     height: 70px;
   }
-}
 
+  .main__homes {
+    height: 354px;
+  }
+  .main__homes .main__slowakia,
+  .main__germany{
+    display: none;
+  }
+
+  .main__homes
+  .main__germany{
+    display: none;
+  }
+
+  .main__homes
+  .main__name--img
+   {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+    text-align: left;
+  }
+
+  .main__homes
+  .main__name--country{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+    text-align: left;
+  }
+
+}
 /*конец*/
 
 .main__homes {
   height: 828px;
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
 }
 
 .main__homes--hotel {
@@ -407,7 +437,17 @@ hr {
   padding: 0;
 }
 
+.main__homes--button {
+  position: relative;
+  top: 135px;
+  right: 40px;
+}
 
+.button__switch {
+  position: absolute;
+ background-color: transparent;
+  border:0;
+}
 
 /*.main__offer {*/
 /*  height: 569px;*/
