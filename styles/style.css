@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+/*html{*/
+/*height: 100%;*/
+/*}*/
 
 body {
   max-width: 1440px;
@@ -12,8 +15,11 @@ body {
 }
 
 .container {
-  /*width: 1440px;*/
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
+
 .header {
   background-image: url("../images/png/castelmezzano.png");
   background-repeat: no-repeat;
@@ -21,7 +27,7 @@ body {
 
 .header__container {
   min-height: 900px;
-  padding: 51px 104px;
+  padding: 51px 0;
 }
 
 .logo__vector {
@@ -208,14 +214,15 @@ body {
 .header__app--link:nth-child(2) {
   margin-left: 16px;
 }
+/*начало Flex-сетка для offer*/
 
 .main__offer {
+  max-width: 1232px;
+  margin: 0 auto;
   height: 569px;
 }
 
 h2 {
-  display: flex;
-  justify-content: center;
   padding-top: 85px;
   font-size: 40px;
   margin-bottom: 20px;
@@ -231,14 +238,16 @@ hr {
 
 .main__offer--parts {
   display: flex;
-  justify-content: space-between;
-  padding-left: 181px;
-  padding-right: 139px;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-.text {
-  font-size: 24px;
-  font-weight: 400;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin: 0 -8px;*/
+  align-items: center;
 }
 
 .main__support,
@@ -247,19 +256,171 @@ hr {
 .main__reviews {
   display: flex;
   flex-direction: column;
+  /*background: red;*/
+  /*width: calc(25% - 16px);*/
+  /*margin: 8px;*/
+  text-align: center;
   justify-content: center;
 }
 
 .icon__offer {
-  display: block;
-  margin: 0 auto 49px auto;
-  width: 100px;
   height: 100px;
+  margin-bottom: 50px;
 }
 
-.main__support {
-  margin-right: -20px;
+.text {
+  font-size: 24px;
+  font-weight: 400;
 }
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .col-m-6 {
+    width: 50%;
+  }
+
+  h2 {
+    padding-top: 45px;
+    font-size: 30px;
+  }
+
+  hr {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main__offer {
+    height: 641px;
+  }
+
+  .main__support,
+  .main__communication,
+  .main__booking,
+  .main__reviews {
+    align-items: center;
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 28px;
+    margin-bottom: 33px;
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 15px;
+    margin-bottom: 37px;
+  }
+
+  .icon__offer {
+    margin-bottom: 16px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*конец*/
+
+/*.main__offer {*/
+/*  height: 569px;*/
+/*}*/
+
+/*h2 {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  padding-top: 85px;*/
+/*  font-size: 40px;*/
+/*  margin-bottom: 20px;*/
+/*}*/
+
+/*hr {*/
+/*  width: 100px;*/
+/*  height: 4px;*/
+/*  background-color: #f5bd41;*/
+/*  border: #f5bd41;*/
+/*  margin-bottom: 80px;*/
+/*}*/
+
+/*.main__offer--parts {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  padding-left: 181px;*/
+/*  padding-right: 139px;*/
+/*}*/
+
+/*.text {*/
+/*  font-size: 24px;*/
+/*  font-weight: 400;*/
+/*}*/
+
+/*.main__support,*/
+/*.main__communication,*/
+/*.main__booking,*/
+/*.main__reviews {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: center;*/
+/*  width: 296px;*/
+/*  height: 176px;*/
+/*}*/
+
+/*.icon__offer {*/
+/*  display: block;*/
+/*  margin: 0 auto 49px auto;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*}*/
+
+/*.main__support {*/
+/*  margin-right: -20px;*/
+/*}*/
 
 .footer {
   height: 630px;
@@ -298,139 +459,139 @@ hr {
   font-size: 14px;
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
-  .main__offer {
-    height: 641px;
-  }
+/*@media (min-width: 769px) and (max-width: 1280px) {*/
+/*  .main__offer {*/
+/*    height: 641px;*/
+/*  }*/
 
-  h2 {
-    padding-top: 35px;
-    font-size: 35px;
-  }
+/*  h2 {*/
+/*    padding-top: 35px;*/
+/*    font-size: 35px;*/
+/*  }*/
 
-  .main__offer--parts {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-bottom: 10px;
-  }
+/*  .main__offer--parts {*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    padding-left: 150px;*/
+/*    padding-right: 150px;*/
+/*    margin-bottom: 10px;*/
+/*  }*/
 
-  .main__support,
-  .main__communication,
-  .main__booking,
-  .main__reviews {
-    text-align: center;
-    margin-bottom: 46px;
-    width: 250px;
-  }
+/*  .main__support,*/
+/*  .main__communication,*/
+/*  .main__booking,*/
+/*  .main__reviews {*/
+/*    text-align: center;*/
+/*    margin-bottom: 46px;*/
+/*    width: 250px;*/
+/*  }*/
 
-  .main__booking {
-    margin-left: -35px;
-  }
+/*  .main__booking {*/
+/*    margin-left: -35px;*/
+/*  }*/
 
-  .main__reviews {
-    margin-left: -20px;
-  }
+/*  .main__reviews {*/
+/*    margin-left: -20px;*/
+/*  }*/
 
-  .icon__offer {
-    margin-bottom: 25px;
-  }
+/*  .icon__offer {*/
+/*    margin-bottom: 25px;*/
+/*  }*/
 
-  .text {
-    font-size: 20px;
-  }
+/*  .text {*/
+/*    font-size: 20px;*/
+/*  }*/
 
-  .footer__parts {
-    margin-right: 104px;
-    font-size: 18px;
-  }
-  .footer__about .footer__item:nth-child(2) {
-    width: 160px;
-  }
-}
+/*  .footer__parts {*/
+/*    margin-right: 104px;*/
+/*    font-size: 18px;*/
+/*  }*/
+/*  .footer__about .footer__item:nth-child(2) {*/
+/*    width: 160px;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 820px) {
-  .icon__offer {
-    margin-bottom: 16px;
-    width: 70px;
-    height: 70px;
-  }
-}
+/*@media screen and (max-width: 820px) {*/
+/*  .icon__offer {*/
+/*    margin-bottom: 16px;*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*  }*/
+/*}*/
 
-@media screen and (max-width: 768px) {
-  .main__offer {
-    height: 641px;
-  }
-  h2 {
-    padding-top: 24px;
-    font-size: 28px;
-    margin-bottom: 33px;
-  }
+/*@media screen and (max-width: 768px) {*/
+/*  .main__offer {*/
+/*    height: 641px;*/
+/*  }*/
+/*  h2 {*/
+/*    padding-top: 24px;*/
+/*    font-size: 28px;*/
+/*    margin-bottom: 33px;*/
+/*  }*/
 
-  hr {
-    display: none;
-  }
-  .main__offer--parts {
-    flex-direction: column;
-    padding-left: 73px;
-    padding-right: 73px;
-  }
+/*  hr {*/
+/*    display: none;*/
+/*  }*/
+/*  .main__offer--parts {*/
+/*    flex-direction: column;*/
+/*    padding-left: 73px;*/
+/*    padding-right: 73px;*/
+/*  }*/
 
-  .main__support,
-  .main__communication,
-  .main__booking,
-  .main__reviews {
-    text-align: center;
-    margin-bottom: 36px;
-  }
+/*  .main__support,*/
+/*  .main__communication,*/
+/*  .main__booking,*/
+/*  .main__reviews {*/
+/*    text-align: center;*/
+/*    margin-bottom: 36px;*/
+/*  }*/
 
-  .main__support {
-    margin-right: 0;
-  }
+/*  .main__support {*/
+/*    margin-right: 0;*/
+/*  }*/
 
-  .text {
-    font-size: 15px;
-  }
+/*  .text {*/
+/*    font-size: 15px;*/
+/*  }*/
 
-  .icon__offer {
-    margin-bottom: 16px;
-    width: 70px;
-    height: 70px;
-  }
+/*  .icon__offer {*/
+/*    margin-bottom: 16px;*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*  }*/
 
-  .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
-    background-repeat: no-repeat;
-    background-position: top 40px center;
-    height: 203px;
-  }
+/*  .footer {*/
+/*    background-image: url("../images/svg/logo_vector_footer.svg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: top 40px center;*/
+/*    height: 203px;*/
+/*  }*/
 
-  .footer__parts {
-    justify-content: space-between;
-    padding-top: 90px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 67px;
-    padding-right: 67px;
-    text-decoration: underline;
-  }
+/*  .footer__parts {*/
+/*    justify-content: space-between;*/
+/*    padding-top: 90px;*/
+/*    margin-left: 0;*/
+/*    margin-right: 0;*/
+/*    padding-left: 67px;*/
+/*    padding-right: 67px;*/
+/*    text-decoration: underline;*/
+/*  }*/
 
-  .footer__title {
-    font-size: 15px;
-  }
+/*  .footer__title {*/
+/*    font-size: 15px;*/
+/*  }*/
 
-  .footer__item {
-    display: none;
-  }
+/*  .footer__item {*/
+/*    display: none;*/
+/*  }*/
 
-  .footer__property {
-    margin-left: 0;
-  }
+/*  .footer__property {*/
+/*    margin-left: 0;*/
+/*  }*/
 
-  .footer__copyright {
-    margin-top: 32px;
-    margin-left: 71px;
-    font-size: 12px;
-  }
-}
+/*  .footer__copyright {*/
+/*    margin-top: 32px;*/
+/*    margin-left: 71px;*/
+/*    font-size: 12px;*/
+/*  }*/
+/*}*/
