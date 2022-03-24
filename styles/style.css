@@ -1,8 +1,8 @@
-@import "../styles/fonts.css";
+@import '../styles/fonts.css';
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,17 +12,18 @@ body {
 }
 
 .container {
-  max-width: 1232px;
+  /* max-width: 1232px; */
   margin: 0 auto;
   padding: 0;
 }
 
 .header {
-  background-image: url("../images/png/castelmezzano.png");
+  background-image: url('../images/png/castelmezzano.png');
   background-repeat: no-repeat;
 }
 
 .header__container {
+  max-width: 1232px;
   min-height: 900px;
   padding: 51px 0;
 }
@@ -307,89 +308,9 @@ hr {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .col-m-6 {
-    width: 50%;
-  }
-
-  h2 {
-    padding-top: 45px;
-    font-size: 30px;
-  }
-
-  hr {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .main__offer {
-    height: 641px;
-  }
-
-  .main__support,
-  .main__communication,
-  .main__booking,
-  .main__reviews {
-    align-items: center;
-  }
-
-  h2 {
-    margin-top: 24px;
-    font-size: 28px;
-    margin-bottom: 33px;
-    padding: 0;
-  }
-
-  hr {
-    display: none;
-  }
-
-  .col-s-12 {
-    width: 100%;
-  }
-
-  .text {
-    font-size: 15px;
-    margin-bottom: 37px;
-  }
-
-  .icon__offer {
-    margin-bottom: 16px;
-    width: 70px;
-    height: 70px;
-  }
-
-  .main__homes {
-    height: 354px;
-  }
-
-  .main__homes .main__slowakia,
-  .main__germany {
-    display: none;
-  }
-
-  .main__homes .main__germany {
-    display: none;
-  }
-
-  .main__homes .main__name--img {
-    font-size: 12px;
-    font-weight: 400;
-    padding-top: 4px;
-    text-align: left;
-  }
-
-  .main__homes .main__name--country {
-    font-size: 12px;
-    font-weight: 400;
-    padding-top: 4px;
-    text-align: left;
-  }
-}
-
 .main__homes {
   height: 828px;
+  background-color: #eaf0f9;
 }
 
 .main__homes--hotel {
@@ -404,9 +325,9 @@ hr {
 .main__germany {
   display: flex;
   flex-direction: column;
-  width: calc(25% - 16px);
-  margin: 8px;
-  justify-content: center;
+  width: calc(25% - 12px);
+  margin: 6px;
+  justify-content: space-between;
 }
 
 .title_homes {
@@ -442,61 +363,10 @@ hr {
   border: 0;
 }
 
+@media screen and (max-width: 768px) {
+}
+
 @media screen and (max-width: 360px) {
-  .main__homes {
-    height: 354px;
-    background-color: #eaf0f9;
-  }
-
-  h2 {
-    margin-top: 40px;
-  }
-
-  .title_homes {
-    margin-bottom: -8px;
-  }
-
-  .main__slowakia,
-  .main__germany {
-    display: none;
-  }
-
-  .main__russia {
-    margin-left: 25px;
-  }
-
-  .main__spain {
-    margin-right: 14px;
-  }
-
-  .col-s-6 {
-    width: calc(50% - 32px);
-  }
-
-  .main__name--img,
-  .main__name--country {
-    font-size: 12px;
-    font-weight: 400;
-    padding-top: 4px;
-    text-align: left;
-  }
-
-  .main__name--img {
-    padding-bottom: 4px;
-  }
-
-  .main__name--country {
-    margin: 0;
-  }
-
-  .main__homes--button {
-    top: 65px;
-    right: 33px;
-  }
-
-  .button__switch--img {
-    width: 32px;
-  }
 }
 
 .footer {
@@ -536,7 +406,63 @@ hr {
   font-size: 14px;
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .main__offer--parts {
+    justify-content: center;
+  }
+
+  h2 {
+    padding-top: 35px;
+    font-size: 30px;
+  }
+
+  hr {
+    margin-bottom: 50px;
+  }
+
+  .icon__offer {
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  .main__homes {
+    height: 870px;
+  }
+
+  .main__homes--hotel {
+    justify-content: center;
+  }
+
+  .title_homes {
+    margin: 0;
+  }
+
+  .main__spain,
+  .main__russia,
+  .main__germany,
+  .main__slowakia {
+    margin-left: 40px;
+    width: calc(50% - 80px);
+  }
+
+  .main__homes--hotel {
+    padding: 8px;
+  }
+
+  .main__name--img,
+  .main__name--country {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+
+  .main__name--country {
+    margin: 0;
+  }
+
   .footer__parts {
     margin-right: 104px;
     font-size: 18px;
@@ -547,9 +473,96 @@ hr {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
+  .main__offer {
+    height: 641px;
+  }
+
+  .main__support,
+  .main__communication,
+  .main__booking,
+  .main__reviews {
+    align-items: center;
+  }
+
+  h2 {
+    margin-top: 24px;
+    font-size: 28px;
+    margin-bottom: 33px;
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 15px;
+    margin-bottom: 37px;
+  }
+
+  .icon__offer {
+    margin-bottom: 16px;
+    margin-top: 0;
+    width: 70px;
+    height: 70px;
+  }
+
+  .main__homes {
+    height: 354px;
+    background-color: #eaf0f9;
+  }
+
+  .main__homes--hotel {
+    padding: 0;
+  }
+
+  .title_homes {
+    margin-bottom: -8px;
+  }
+
+  .main__slowakia,
+  .main__germany {
+    display: none;
+  }
+
+  .main__spain,
+  .main__russia {
+    width: calc(50% - 32px);
+    margin-left: 0;
+  }
+
+  .main__name--img,
+  .main__name--country {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+    text-align: left;
+  }
+
+  .main__name--img {
+    padding-bottom: 4px;
+  }
+
+  .main__name--country {
+    margin: 0;
+  }
+
+  .main__homes--button {
+    top: 65px;
+    right: 33px;
+  }
+
+  .button__switch--img {
+    width: 32px;
+  }
+
   .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-image: url('../images/svg/logo_vector_footer.svg');
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;
