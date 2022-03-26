@@ -1,8 +1,8 @@
-@import '../styles/fonts.css';
+@import "../styles/fonts.css";
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -12,13 +12,14 @@ body {
 }
 
 .container {
-  /* max-width: 1232px; */
+  max-width: 1232px;
   margin: 0 auto;
   padding: 0;
+  /* border: 4px solid red; */
 }
 
 .header {
-  background-image: url('../images/png/castelmezzano.png');
+  background-image: url("../images/png/castelmezzano.png");
   background-repeat: no-repeat;
 }
 
@@ -45,21 +46,39 @@ body {
   margin-top: 7px;
 }
 
+.nav__item{
+   position: relative;
+}
+
 .nav__link {
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
-  border-bottom: 4px solid transparent;
-  padding-bottom: 10px;
 }
 
-.nav__link:focus {
-  border-bottom: 4px solid #f5bd41;
+.nav__link:focus::after {
+  position: absolute;
+   display: block;
+   width: calc(100% - 35px);
+   height: 4px;
+   content: "";
+   background-color: #f5bd41;
+   margin-top: 10px;
+   margin-left:5px;
+   margin-right: 5px;
 }
 
-.nav__link:hover {
-  border-bottom: 4px solid #f5bd41;
+.nav__link:hover::after {
+  position: absolute;
+   display: block;
+   width: calc(100% - 35px);
+   height: 4px;
+   content: "";
+   background-color: #f5bd41;
+   margin-top: 10px;
+   margin-left:5px;
+   margin-right: 5px;
 }
 
 .nav__link:nth-child(1) {
@@ -71,10 +90,13 @@ body {
   padding-right: 20px;
 }
 
+.btn{
+   cursor: pointer;
+   border: 0;
+}
+
 .header__button--light {
   background-color: transparent;
-  border: 0;
-  cursor: pointer;
   padding-right: 25px;
 }
 
@@ -223,15 +245,22 @@ body {
 h2 {
   padding-top: 85px;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
-hr {
+.main__title {
+  position: relative;
+}
+
+h2::after {
+  position: absolute;
+  display: block;
   width: 100px;
   height: 4px;
+  content: "";
   background-color: #f5bd41;
-  border: #f5bd41;
-  margin-bottom: 80px;
+  top: 187px;
+  left:37%
 }
 
 .main__offer--parts {
@@ -254,9 +283,6 @@ hr {
 .main__reviews {
   display: flex;
   flex-direction: column;
-  /*background: red;*/
-  /*width: calc(25% - 16px);*/
-  /*margin: 8px;*/
   text-align: center;
   justify-content: center;
 }
@@ -308,6 +334,10 @@ hr {
   width: 100%;
 }
 
+.main__container--homes{
+   max-width: 1440px;
+}
+
 .main__homes {
   height: 828px;
   background-color: #eaf0f9;
@@ -317,6 +347,7 @@ hr {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .main__russia,
@@ -325,13 +356,9 @@ hr {
 .main__germany {
   display: flex;
   flex-direction: column;
-  width: calc(25% - 12px);
-  margin: 6px;
-  justify-content: space-between;
-}
-
-.title_homes {
-  margin-bottom: 76px;
+  width: calc(25% - 26px);
+  margin: 8px;
+  justify-content: center;
 }
 
 .main__name--img,
@@ -352,21 +379,24 @@ hr {
 }
 
 .main__homes--button {
-  position: relative;
-  top: 135px;
-  right: 40px;
+ position: relative;
 }
-
-.button__switch {
-  position: absolute;
+.button__switch{
   background-color: transparent;
-  border: 0;
+  border: transparent;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+.button__switch .icon__offer {
+  position: absolute;
+ width: 45px;
+ height: 45px;
+ top: 140px;
+ margin-left: -35px;
 }
 
-@media screen and (max-width: 360px) {
+.footer__container {
+  max-width: 1232px;
 }
 
 .footer {
@@ -381,7 +411,7 @@ hr {
   display: flex;
   justify-content: space-between;
   padding-top: 120px;
-  margin-left: 104px;
+
   margin-right: 272px;
 }
 
@@ -402,8 +432,22 @@ hr {
 
 .footer__copyright {
   margin-top: 65px;
-  margin-left: 104px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+   .footer__parts {
+      font-size: 18px;
+      margin-left: 50px;
+    }
+
+    .footer__copyright {
+      margin-left: 50px;
+    }
+  
+    .footer__about .footer__item:nth-child(2) {
+      width: 160px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -419,9 +463,8 @@ hr {
     padding-top: 35px;
     font-size: 30px;
   }
-
-  hr {
-    margin-bottom: 50px;
+  h2::after{
+    display: none;
   }
 
   .icon__offer {
@@ -462,15 +505,6 @@ hr {
   .main__name--country {
     margin: 0;
   }
-
-  .footer__parts {
-    margin-right: 104px;
-    font-size: 18px;
-  }
-
-  .footer__about .footer__item:nth-child(2) {
-    width: 160px;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -492,7 +526,7 @@ hr {
     padding: 0;
   }
 
-  hr {
+  h2::after{
     display: none;
   }
 
@@ -562,7 +596,7 @@ hr {
   }
 
   .footer {
-    background-image: url('../images/svg/logo_vector_footer.svg');
+    background-image: url("../images/svg/logo_vector_footer.svg");
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;
