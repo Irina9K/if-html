@@ -1,8 +1,8 @@
-@import "../styles/fonts.css";
+@import '../styles/fonts.css';
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  background-image: url("../images/png/castelmezzano.png");
+  background-image: url('../images/png/castelmezzano.png');
   background-repeat: no-repeat;
 }
 
@@ -46,8 +46,8 @@ body {
   margin-top: 7px;
 }
 
-.nav__item{
-   position: relative;
+.nav__item {
+  position: relative;
 }
 
 .nav__link {
@@ -55,30 +55,32 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+  transition: 0.8s;
 }
 
 .nav__link:focus::after {
   position: absolute;
-   display: block;
-   width: calc(100% - 35px);
-   height: 4px;
-   content: "";
-   background-color: #f5bd41;
-   margin-top: 10px;
-   margin-left:5px;
-   margin-right: 5px;
+  display: block;
+  width: calc(100% - 35px);
+  height: 4px;
+  content: '';
+  background-color: #f5bd41;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .nav__link:hover::after {
   position: absolute;
-   display: block;
-   width: calc(100% - 35px);
-   height: 4px;
-   content: "";
-   background-color: #f5bd41;
-   margin-top: 10px;
-   margin-left:5px;
-   margin-right: 5px;
+  display: block;
+  width: calc(100% - 35px);
+  height: 4px;
+  content: '';
+  background-color: #f5bd41;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.8s;
 }
 
 .nav__link:nth-child(1) {
@@ -90,9 +92,9 @@ body {
   padding-right: 20px;
 }
 
-.btn{
-   cursor: pointer;
-   border: 0;
+.btn {
+  cursor: pointer;
+  border: 0;
 }
 
 .header__button--light {
@@ -120,7 +122,7 @@ body {
 .icon__night,
 .icon__account,
 .nav__link {
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .icon__account:hover {
@@ -257,16 +259,10 @@ h2::after {
   display: block;
   width: 100px;
   height: 4px;
-  content: "";
+  content: '';
   background-color: #f5bd41;
   top: 187px;
-  left:37%
-}
-
-.main__offer--parts {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  left: 37%;
 }
 
 .row {
@@ -274,6 +270,12 @@ h2::after {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 -8px;
+  align-items: center;
+}
+
+.main__offer--parts {
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
 }
 
@@ -334,8 +336,8 @@ h2::after {
   width: 100%;
 }
 
-.main__container--homes{
-   max-width: 1440px;
+.main__container--homes {
+  max-width: 1440px;
 }
 
 .main__homes {
@@ -379,20 +381,18 @@ h2::after {
 }
 
 .main__homes--button {
- position: relative;
+  position: relative;
 }
-.button__switch{
+.button__switch {
   background-color: transparent;
-  border: transparent;
-  cursor: pointer;
 }
 
 .button__switch .icon__offer {
   position: absolute;
- width: 45px;
- height: 45px;
- top: 140px;
- margin-left: -35px;
+  width: 45px;
+  height: 45px;
+  top: 140px;
+  margin-left: -35px;
 }
 
 .footer__container {
@@ -407,12 +407,29 @@ h2::after {
   font-size: 20px;
 }
 
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer__parts {
   display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
   justify-content: space-between;
-  padding-top: 120px;
+  margin-top: 90px;
+}
 
-  margin-right: 272px;
+.footer__about,
+.footer__property,
+.footer__support {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(33% - 230px);
+  margin-right: 230px;
 }
 
 .footer__item {
@@ -422,32 +439,88 @@ h2::after {
 }
 
 .footer__title {
-  margin: 0;
+  margin-bottom: 0;
   font-weight: 500;
 }
 
-.footer__property {
-  margin-left: -55px;
-}
-
 .footer__copyright {
-  margin-top: 65px;
+  margin-top: 70px;
   font-size: 14px;
 }
 
-@media screen and (max-width: 1000px) {
-   .footer__parts {
-      font-size: 18px;
-      margin-left: 50px;
-    }
+@media screen and (max-width: 1200px) {
+  .footer__parts {
+    font-size: 18px;
+    margin-left: 71px;
+  }
 
-    .footer__copyright {
-      margin-left: 50px;
-    }
-  
-    .footer__about .footer__item:nth-child(2) {
-      width: 160px;
-    }
+  .footer__about,
+  .footer__property,
+  .footer__support {
+   width: calc(33% - 180px);
+   margin-right: 180px;
+  }
+
+  .footer__copyright {
+    margin-left: 71px;
+  }
+
+  .footer__about .footer__item:nth-child(2) {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+   .footer__about,
+   .footer__property,
+   .footer__support {
+    width: calc(33% - 50px);
+    margin-right: 50px;
+   }  
+}
+
+@media screen and (max-width: 600px){
+.footer {
+   background-image: url('../images/svg/logo_vector_footer.svg');
+   background-repeat: no-repeat;
+   background-position: top 40px center;
+   height: 203px;
+   /* margin-bottom: -20px; */
+ }
+
+ .footer__about,
+ .footer__property,
+ .footer__support {
+   margin-right: 16px;
+ }
+
+ .footer__parts {
+   justify-content: space-between;
+   /* padding-top: 90px; */
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 67px;
+   padding-right: 67px;
+   text-decoration: underline;
+ }
+
+ .footer__title {
+   font-size: 15px;
+ }
+
+ .footer__item {
+   display: none;
+ }
+
+ .footer__property {
+   margin-left: 0;
+ }
+
+ .footer__copyright {
+   margin-top: 32px;
+   margin-left: 71px;
+   font-size: 12px;
+ }
 }
 
 @media screen and (max-width: 768px) {
@@ -463,7 +536,7 @@ h2::after {
     padding-top: 35px;
     font-size: 30px;
   }
-  h2::after{
+  h2::after {
     display: none;
   }
 
@@ -526,7 +599,7 @@ h2::after {
     padding: 0;
   }
 
-  h2::after{
+  h2::after {
     display: none;
   }
 
@@ -591,42 +664,13 @@ h2::after {
     right: 33px;
   }
 
-  .button__switch--img {
-    width: 32px;
+  .button__switch .icon__offer {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 10px;
+    margin-left: 6px;
   }
 
-  .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
-    background-repeat: no-repeat;
-    background-position: top 40px center;
-    height: 203px;
-  }
-
-  .footer__parts {
-    justify-content: space-between;
-    padding-top: 90px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 67px;
-    padding-right: 67px;
-    text-decoration: underline;
-  }
-
-  .footer__title {
-    font-size: 15px;
-  }
-
-  .footer__item {
-    display: none;
-  }
-
-  .footer__property {
-    margin-left: 0;
-  }
-
-  .footer__copyright {
-    margin-top: 32px;
-    margin-left: 71px;
-    font-size: 12px;
-  }
+  
 }
