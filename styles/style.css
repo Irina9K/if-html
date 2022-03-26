@@ -352,6 +352,11 @@ h2::after {
   justify-content: center;
 }
 
+.nav__link--country {
+  text-decoration: none;
+  color: #3077c6;
+}
+
 .main__name--img,
 .main__name--country {
   font-size: 24px;
@@ -360,13 +365,9 @@ h2::after {
   text-align: left;
 }
 
-.main__name--img {
-  color: #3077c6;
-}
-
 .main__name--country {
   color: #bfbfbf;
-  padding: 0;
+  padding-top: 24px;
 }
 
 .main__homes--hotel {
@@ -380,9 +381,9 @@ h2::after {
   position: absolute;
   width: 45px;
   height: 45px;
-  top:33%;
-  left:98%;
-  transform:translate(-50%, -50%);
+  top: 33%;
+  left: 98%;
+  transform: translate(-50%, -50%);
 }
 
 .footer__container {
@@ -570,13 +571,13 @@ h2::after {
   }
 
   .button__switch .icon__offer {
-   position: absolute;
-   width: 40px;
-   height: 40px;
-   top:45%;
-   left:95%;
-   transform:translate(-50%, -50%);
- }
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -669,8 +670,8 @@ h2::after {
     height: 28px;
     /* top: 10px;
     margin-left: 6px; */
-    top:37%;
-    left:89%;
-    transform:translate(-50%, -50%);
+    top: 37%;
+    left: 89%;
+    transform: translate(-50%, -50%);
   }
 }
