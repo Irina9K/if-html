@@ -24,7 +24,7 @@
             </ul>
           </nav>
           <div class="header__light">
-            <button class="header__button--light">
+            <button class="btn header__button--light">
               <svg class="icon__night">
                 <use xlink:href="./images/sprite/sprite.svg#night"></use>
               </svg>
@@ -82,7 +82,7 @@
               </div>
             </div>
             <div class="container__button">
-              <button class="header__button">Search</button>
+              <button class="btn header__button">Search</button>
             </div>
           </form>
 
@@ -98,7 +98,7 @@
       </div>
     </header>
     <main class="main">
-      <div class="container main__container">
+      <div class="container main__container--offer">
         <section class="main__offer">
           <div class="row">
             <div class="main__title">
@@ -134,6 +134,8 @@
             </div>
           </div>
         </section>
+      </div>
+      <div class="container main__container--homes">
         <section class="main__homes">
           <div class="row">
             <div class="main__title title_homes">
@@ -142,8 +144,12 @@
             <div class="main__homes--hotel">
               <figure class="main__russia col-s-6 col-m-4">
                 <img src="./images/png/hotel_leopold.png" alt="hotel_leopold" />
-                <figcaption class="main__name--img">Hotel Leopold</figcaption>
-                <p class="main__name--country">Saint Petersburg, Russia</p>
+                <figcaption class="main__name--img">
+                  <a href="#" class="nav__link--country">Hotel Leopold</a>
+                </figcaption>
+                <figcaption class="main__name--country">
+                  Saint Petersburg, Russia
+                </figcaption>
               </figure>
               <figure class="main__spain col-s-6 col-m-4">
                 <img
@@ -151,14 +157,20 @@
                   alt="apartment_sunshine"
                 />
                 <figcaption class="main__name--img">
-                  Apartment Sunshine
+                  <a href="#" class="nav__link--country"> Apartment Sunshine</a>
                 </figcaption>
-                <p class="main__name--country">Santa Cruz de Tenerife, Spain</p>
+                <figcaption class="main__name--country">
+                  Santa Cruz de Tenerife, Spain
+                </figcaption>
               </figure>
               <figure class="main__slowakia col-m-4">
                 <img src="./images/png/villa_kunerad.png" alt="villa_kunerad" />
-                <figcaption class="main__name--img">Villa Kunerad</figcaption>
-                <p class="main__name--country">Vysokie Tatry, Slowakia</p>
+                <figcaption class="main__name--img">
+                  <a href="#" class="nav__link--country">Villa Kunerad</a>
+                </figcaption>
+                <figcaption class="main__name--country">
+                  Vysokie Tatry, Slowakia
+                </figcaption>
               </figure>
               <figure class="main__germany col-m-4">
                 <img
@@ -166,17 +178,17 @@
                   alt="hostel_friendship"
                 />
                 <figcaption class="main__name--img">
-                  Hostel Friendship
+                  <a href="#" class="nav__link--country"> Hostel Friendship</a>
                 </figcaption>
-                <p class="main__name--country">Berlin, Germany</p>
+                <figcaption class="main__name--country">
+                  Berlin, Germany
+                </figcaption>
               </figure>
               <div class="main__homes--button">
-                <button class="button__switch">
-                  <img
-                    class="button__switch--img"
-                    src="./images/svg/arrow.svg"
-                    alt="arrow"
-                  />
+                <button class="btn button__switch">
+                  <svg class="icon__offer">
+                    <use xlink:href="./images/sprite/sprite.svg#arrow"></use>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -186,27 +198,29 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__parts">
-          <div class="footer__about">
-            <h4 class="footer__title">About</h4>
-            <span class="footer__item">How Triphouse works</span>
-            <span class="footer__item">Careers</span>
-            <span class="footer__item">Privacy</span>
-            <span class="footer__item">Terms</span>
-          </div>
-          <div class="footer__property">
-            <h4 class="footer__title">Property types</h4>
-            <span class="footer__item">Guest houses</span>
-            <span class="footer__item">Hotels</span>
-            <span class="footer__item">Apartments</span>
-            <span class="footer__item">Villas</span>
-            <span class="footer__item">Holiday homes</span>
-            <span class="footer__item">Hostels</span>
-          </div>
-          <div class="footer__support">
-            <h4 class="footer__title">Support</h4>
-            <span class="footer__item">Contact Customer Service</span>
-            <span class="footer__item">FAQ</span>
+        <div class="row-footer">
+          <div class="footer__parts">
+            <div class="footer__about">
+              <h4 class="footer__title">About</h4>
+              <span class="footer__item">How Triphouse works</span>
+              <span class="footer__item">Careers</span>
+              <span class="footer__item">Privacy</span>
+              <span class="footer__item">Terms</span>
+            </div>
+            <div class="footer__property">
+              <h4 class="footer__title">Property types</h4>
+              <span class="footer__item">Guest houses</span>
+              <span class="footer__item">Hotels</span>
+              <span class="footer__item">Apartments</span>
+              <span class="footer__item">Villas</span>
+              <span class="footer__item">Holiday homes</span>
+              <span class="footer__item">Hostels</span>
+            </div>
+            <div class="footer__support">
+              <h4 class="footer__title">Support</h4>
+              <span class="footer__item">Contact Customer Service</span>
+              <span class="footer__item">FAQ</span>
+            </div>
           </div>
         </div>
         <p class="footer__copyright">
