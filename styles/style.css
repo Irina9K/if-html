@@ -472,6 +472,20 @@ h2::after {
   position: relative;
 }
 
+.button__book{
+  position: absolute;
+  top:35%;
+  left:6%;
+}
+
+.button__book, .button__sign{
+  width: 128px;
+  height: 48px;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  color: #3077C6;
+}
+
 .button__switch--destinations {
   background-color: transparent;
 }
@@ -484,6 +498,36 @@ h2::after {
   left: 48%;
  transform: rotate(90deg);
 }
+
+.row-sign {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #EAF0F9;
+  height: 200px;
+}
+
+.main__sign--icon{
+  padding-left: 24px;
+  padding-top: 57px;
+}
+
+.icon__sign{
+  width: 86px;
+margin-right: 55px;
+
+}
+.discount{
+  font-size: 24px;
+  font-weight: 500;
+margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.main__sign--content{
+
+}
+
 
 
 .footer__container {
