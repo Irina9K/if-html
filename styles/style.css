@@ -11,6 +11,10 @@ body {
   color: #383838;
 }
 
+a{
+  text-decoration: none;
+}
+
 .container {
   max-width: 1232px;
   margin: 0 auto;
@@ -51,7 +55,7 @@ body {
 }
 
 .nav__link {
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
@@ -390,6 +394,97 @@ h2::after {
   left: 98%;
   transform: translate(-50%, -50%);
 }
+
+.main__destinations {
+  max-width: 1232px;
+  margin: 0 auto;
+  height: 958px;
+}
+
+.row__destinations {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__destinations .main__title {
+  position: relative;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.btn__destinations{
+  height: 64px;
+  width: 192px;
+  color: #383838;
+  background-color: #F3F3F4;
+  border-radius: 8px 0 0 8px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom:64px ;
+}
+
+.btn__destinations:nth-child(2){
+  border-radius: 0;
+}
+
+.btn__destinations:nth-child(3){
+  border-radius: 0 8px 8px 0;
+  width: 238px;
+}
+
+/*.btn__destinations:hover,*/
+.btn__destinations:focus{
+  color: #FFFFFF;
+  background-color: #3077C6;
+  border-radius: 8px ;
+}
+
+.main__destinations--parts {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.main__maldives,
+.main__spain,
+.main__norway,
+.main__island {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 15px);
+  margin: 7px;
+}
+
+.main__destinations--parts .main__name--img{
+  text-decoration: none;
+  color: #3077C6;
+}
+
+.main__destinations--parts {
+  position: relative;
+}
+
+.button__switch--destinations {
+  background-color: transparent;
+}
+
+.button__switch--destinations .icon__offer {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 106%;
+  left: 48%;
+ transform: rotate(90deg);
+}
+
 
 .footer__container {
   max-width: 1232px;
