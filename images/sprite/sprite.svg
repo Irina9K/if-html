@@ -64,4 +64,7 @@
     <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" id="cross">
       <path d="M26 1.4857L24.5144 0L13 11.5143L1.4857 0L0 1.4857L11.5143 13L0 24.5144L1.4857 26L13 14.4857L24.5144 26L26 24.5144L14.4857 13L26 1.4857Z" fill="#BFBFBF"></path>
     </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" id="menu">
+    <path d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z" fill="white"></path>
+  </symbol>
 </svg>

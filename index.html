@@ -11,9 +11,11 @@
       <div class="container header__container">
         <section class="section section__header--top">
           <div class="header__logo">
-            <svg class="logo__vector">
-              <use xlink:href="./images/sprite/sprite.svg#logo_vector"></use>
-            </svg>
+            <a href="#">
+              <svg class="logo__vector">
+                <use xlink:href="./images/sprite/sprite.svg#logo_vector"></use>
+              </svg>
+            </a>
           </div>
           <nav class="nav">
             <ul class="nav__list">
@@ -23,7 +25,7 @@
               </li>
             </ul>
           </nav>
-          <div class="header__light">
+          <div class="header__icon">
             <button class="btn header__button--light">
               <svg class="icon__night">
                 <use xlink:href="./images/sprite/sprite.svg#night"></use>
@@ -31,6 +33,9 @@
             </button>
             <svg class="icon__account">
               <use xlink:href="./images/sprite/sprite.svg#account_circle"></use>
+            </svg>
+            <svg class="icon__menu">
+              <use xlink:href="./images/sprite/sprite.svg#menu"></use>
             </svg>
           </div>
         </section>
@@ -41,7 +46,7 @@
           </h1>
 
           <form class="input__group">
-            <div class="container__forms">
+            <div class="container__forms--first">
               <label class="input__group--label" for="city">
                 Your destination or hotel name
               </label>
@@ -55,20 +60,35 @@
                 />
               </div>
             </div>
-            <div class="container__forms">
-              <label class="input__group--label" for="data"
-                >Check-in &#8211; Check-out
-              </label>
-              <div class="input2">
-                <input
-                  class="input__group--input header__choice--data"
-                  type="date"
-                  id="data"
-                  name="data"
-                />
+            <div class="container__forms--second">
+              <div class="forms__check--in">
+                <label class="input__group--label" for="datain"
+                  >Check-in
+                </label>
+                <div class="input2_1">
+                  <input
+                    class="input__group--input header__choice--data"
+                    type="date"
+                    id="datain"
+                    name="data"
+                  />
+                </div>
+              </div>
+              <div class="forms__check--out">
+                <label class="input__group--label" for="dataout"
+                  >&#8211; Check-out
+                </label>
+                <div class="input2_2">
+                  <input
+                    class="input__group--input header__choice--data"
+                    type="date"
+                    id="dataout"
+                    name="data"
+                  />
+                </div>
               </div>
             </div>
-            <div class="container__forms">
+            <div class="container__forms--third">
               <label class="input__group--label" for="people-room"> </label
               ><br />
               <div class="input3">
@@ -81,7 +101,7 @@
                 />
               </div>
             </div>
-            <div class="container__button">
+            <div class="container__forms--button">
               <button class="btn header__button">Search</button>
             </div>
           </form>
@@ -202,11 +222,13 @@
             <div class="main__title">
               <h2>The best destinations</h2>
             </div>
+
             <div class="buttons">
               <button class="btn btn__destinations">Regions</button>
               <button class="btn btn__destinations">Cities</button>
               <button class="btn btn__destinations">Places of interest</button>
             </div>
+
             <div class="main__destinations--parts col-12">
               <figure class="main__maldives col-3 col-m-6 col-s-12">
                 <img src="./images/svg/maldives.svg" alt="maldives" />
@@ -245,33 +267,33 @@
             </div>
           </div>
         </section>
-        <div class="container main__container--sign">
-          <section class="main__sign">
-            <div class="row-sign">
-              <div class="main__sign--icon">
-                <svg class="icon__sign">
-                  <use xlink:href="./images/sprite/sprite.svg#user"></use>
-                </svg>
-              </div>
+      </div>
+      <div class="container main__container--sign">
+        <section class="main__sign">
+          <div class="row-sign">
+            <div class="main__sign--icon">
+              <svg class="icon__sign">
+                <use xlink:href="./images/sprite/sprite.svg#user"></use>
+              </svg>
+            </div>
 
-              <div class="main__sign--content">
-                <div class="discount">
-                  Sign up and get 20% off your first booking
-                </div>
-                <div class="main__sign--button">
-                  <button class="btn button__sign">Sign up</button>
-                </div>
+            <div class="main__sign--content">
+              <div class="discount">
+                Sign up and get 20% off your first booking
               </div>
-              <div class="main__sign--cross">
-                <button class="btn button__cross">
-                  <svg class="icon__cross">
-                    <use xlink:href="./images/sprite/sprite.svg#cross"></use>
-                  </svg>
-                </button>
+              <div class="main__sign--button">
+                <button class="btn button__sign">Sign up</button>
               </div>
             </div>
-          </section>
-        </div>
+            <div class="main__sign--cross">
+              <button class="btn button__cross">
+                <svg class="icon__cross">
+                  <use xlink:href="./images/sprite/sprite.svg#cross"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer">
