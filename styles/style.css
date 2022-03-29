@@ -500,6 +500,7 @@ h2::after {
 }
 
 .row-sign {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -509,7 +510,7 @@ h2::after {
 
 .main__sign--icon{
   padding-left: 24px;
-  padding-top: 57px;
+  /*padding-top: 57px;*/
 }
 
 .icon__sign{
@@ -517,6 +518,10 @@ h2::after {
 margin-right: 55px;
 
 }
+.main__sign--content{
+  margin-left:-20px
+}
+
 .discount{
   font-size: 24px;
   font-weight: 500;
@@ -527,6 +532,23 @@ margin-top: -5px;
 .main__sign--content{
 
 }
+
+.main__sign--cross {
+  position: absolute;
+  top: 13%;
+  left: 96%;
+}
+
+.button__cross {
+  background-color: transparent;
+}
+
+.button__cross > .icon__cross{
+  width: 26px;
+  height: 26px;
+}
+
+
 
 
 
