@@ -44,53 +44,51 @@
             Discover stays<br />
             to live, work or just relax
           </h1>
+
           <form class="input__group">
             <div class="container__forms--first">
-              <label class="input__group--label" for="city">
-                Your destination or hotel name
-              </label>
-              <div class="input1">
                 <input
                   class="input__group--input header__choice--city"
                   type="search"
                   id="city"
                   name="city"
-                  placeholder="New York"
+                  required
                 />
-              </div>
+              <label class="input__group--label" for="city">
+                Your destination or hotel name
+              </label>
             </div>
+
             <div class="container__forms--second">
               <div class="forms__check--in">
+                  <input
+                    class="input__group--input header__choice--data"
+                    onfocus="(this.type='date')" onblur="(this.type='text')"
+                    type="text"
+                    id="datain"
+                    name="data"
+                    required
+                  />
                 <label class="input__group--label" for="datain"
                   >Check-in
                 </label>
-                <div class="input2_1">
-                  <input
-                    class="input__group--input header__choice--data"
-                    type="date"
-                    id="datain"
-                    name="data"
-                  />
-                </div>
               </div>
+
               <div class="forms__check--out">
-                <label class="input__group--label" for="dataout"
-                  >&#8211; Check-out
-                </label>
-                <div class="input2_2">
                   <input
                     class="input__group--input header__choice--data"
-                    type="date"
+                    onfocus="(this.type='date')" onblur="(this.type='text')"
+                    type="text"
                     id="dataout"
                     name="data"
+                    required
                   />
-                </div>
+                <label class="input__group--label" for="dataout">
+                  Check-out
+                </label>
               </div>
             </div>
             <div class="container__forms--third">
-              <label class="input__group--label" for="people-room"> </label
-              ><br />
-              <div class="input3">
                 <input
                   class="input__group--input header__choice--people"
                   type="text"
@@ -98,12 +96,14 @@
                   name="people-room"
                   placeholder="2 Adults &#8211; 0 Children &#8211; 1 Room"
                 />
-              </div>
+              <label class="input__group--label" for="people-room"> </label>
             </div>
+
             <div class="container__forms--button">
               <button class="btn header__button">Search</button>
             </div>
           </form>
+
           <div class="header__app">
             <a href="#" class="header__app--link">
               <img src="./images/png/google_play.png" alt="google_play" />
