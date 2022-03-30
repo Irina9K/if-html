@@ -725,6 +725,7 @@ h2::after {
 
   .main__homes--hotel {
     justify-content: center;
+    padding: 8px;
   }
 
   .title_homes {
@@ -739,13 +740,9 @@ h2::after {
     width: calc(50% - 80px);
   }
 
-  .main__homes--hotel {
-    padding: 8px;
-  }
-
   .main__name--img,
   .main__name--country {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 5px;
   }
 
@@ -757,10 +754,69 @@ h2::after {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 47%;
+    top: 48%;
     left: 96%;
     transform: translate(-50%, -50%);
   }
+
+  .main__destinations {
+    height: 870px;
+  }
+
+  .button__book,
+  .main__container--sign {
+    display: none;
+  }
+
+  .btn__destinations span {
+    display: none;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .btn__destinations:nth-child(1),
+  .btn__destinations:nth-child(2),
+  .btn__destinations:nth-child(3) {
+    border-radius: 8px;
+    width: 100px;
+  }
+
+  .btn__destinations {
+    height: 45px;
+    color: #383838;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
+    font-size: 21px;
+    font-weight: 400;
+    margin-right: 8px;
+   margin-bottom: 0;
+  }
+
+  .main__destinations--parts {
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .main__maldives,
+  .main__spain,
+  .main__norway,
+  .main__island {
+    margin-left: 40px;
+    width: calc(50% - 80px);
+  }
+
+  .icon__arrow--destinations {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 48%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+  }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -773,12 +829,21 @@ h2::after {
     font-size: 12px;
     padding-top: 5px;
   }
+
+  .main__destinations {
+    height: 650px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .main__homes {
     height: 600px;
   }
+
+  .main__destinations {
+    height: 530px;
+  }
+
   .footer {
     background-image: url("../images/svg/logo_vector_footer.svg");
     background-repeat: no-repeat;
