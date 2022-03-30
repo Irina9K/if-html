@@ -43,11 +43,6 @@ a {
   align-items: flex-start;
 }
 
-/*add*/
-/*.header__logo{*/
-/*  width:100%;*/
-/*}*/
-
 .logo__vector {
   width: 205px;
   height: 40px;
@@ -57,7 +52,6 @@ a {
   display: flex;
   list-style-type: none;
   margin-top: 7px;
-  /*width: 25%;*/
 }
 
 .nav__item {
@@ -123,6 +117,7 @@ a {
   height: 42px;
   fill: #ffffff;
 }
+
 .icon__menu {
   display: none;
 }
@@ -183,10 +178,6 @@ a {
 .container__forms--third {
   width: 25%;
 }
-
-/*.container__forms--button{*/
-/*  width: 10%;*/
-/*}*/
 
 .input__group--label {
   color: #ffffff;
@@ -397,7 +388,7 @@ h2::after {
 }
 
 .main__russia,
-.main__spain,
+.main__spain--homes,
 .main__slowakia,
 .main__germany {
   display: flex;
@@ -557,7 +548,6 @@ h2::after {
 
 .main__sign--icon {
   padding-left: 24px;
-  /*padding-top: 57px;*/
 }
 
 .icon__sign {
@@ -608,7 +598,6 @@ h2::after {
 .row-footer {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   align-items: center;
   margin: 0;
 }
@@ -617,7 +606,6 @@ h2::after {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  /*justify-content: space-between;*/
   margin-top: 110px;
 }
 
@@ -627,8 +615,6 @@ h2::after {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*width: calc(33% - 208px);*/
-  /*margin-right: 208px;*/
   padding-left: 0;
 }
 
@@ -687,6 +673,14 @@ h2::after {
 }
 
 @media screen and (max-width: 800px) {
+  .main__homes {
+    height: 690px;
+  }
+
+  .main__destinations {
+    height: 750px;
+  }
+
   .footer__about,
   .footer__property,
   .footer__support {
@@ -732,7 +726,7 @@ h2::after {
     margin: 0;
   }
 
-  .main__spain,
+  .main__spain--homes,
   .main__russia,
   .main__germany,
   .main__slowakia {
@@ -750,7 +744,7 @@ h2::after {
     margin: 0;
   }
 
- .icon__arrow--homes {
+  .icon__arrow--homes {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -791,12 +785,11 @@ h2::after {
     font-size: 21px;
     font-weight: 400;
     margin-right: 8px;
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .main__destinations--parts {
     justify-content: center;
-    padding: 8px;
   }
 
   .main__maldives,
@@ -815,8 +808,6 @@ h2::after {
     left: 96%;
     transform: translate(-50%, -50%);
   }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -837,11 +828,27 @@ h2::after {
 
 @media screen and (max-width: 500px) {
   .main__homes {
-    height: 600px;
+    height: 570px;
+  }
+
+  .icon__arrow--homes {
+    width: 28px;
+    height: 28px;
+    top: 46%;
+    left: 94%;
+    transform: translate(-50%, -50%);
   }
 
   .main__destinations {
     height: 530px;
+  }
+
+  .icon__arrow--destinations {
+    width: 28px;
+    height: 28px;
+    top: 48%;
+    left: 94%;
+    transform: translate(-50%, -50%);
   }
 
   .footer {
@@ -930,7 +937,7 @@ h2::after {
     display: none;
   }
 
-  .main__spain,
+  .main__spain--homes,
   .main__russia {
     width: calc(50% - 32px);
     margin-left: 0;
@@ -1028,7 +1035,7 @@ h2::after {
   .icon__arrow--destinations {
     width: 28px;
     height: 28px;
-    top: 35%;
+    top: 38%;
     left: 91%;
     transform: rotate(0deg);
   }
