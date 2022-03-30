@@ -13,7 +13,7 @@ body {
   color: #383838;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ a{
   height: 42px;
   fill: #ffffff;
 }
-.icon__menu{
+.icon__menu {
   display: none;
 }
 
@@ -163,24 +163,24 @@ a{
   /*background-color: #f3f3f4;*/
 }
 
-.container__forms--first{
+.container__forms--first {
   width: 38%;
 }
 
-.container__forms--second{
+.container__forms--second {
   display: flex;
   width: 21%;
 }
 
-.forms__check--in{
+.forms__check--in {
   width: 50%;
 }
 
-.forms__check--out{
+.forms__check--out {
   width: 50%;
 }
 
-.container__forms--third{
+.container__forms--third {
   width: 25%;
 }
 
@@ -196,15 +196,14 @@ a{
 .input1,
 .input2_1,
 .input2_2,
-.input3
-{
+.input3 {
   background-color: #f3f3f4;
   margin-top: 22px;
 }
 
-.container__forms--button{
-  background-color: #F3F3F4;
- height: 64px;
+.container__forms--button {
+  background-color: #f3f3f4;
+  height: 64px;
   width: 100px;
   margin-top: 43px;
 }
@@ -430,11 +429,11 @@ h2::after {
   position: relative;
 }
 
-.button__switch {
+.button__switch--homes {
   background-color: transparent;
 }
 
-.button__switch .icon__offer {
+.icon__arrow--homes {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -465,34 +464,33 @@ h2::after {
 .buttons {
   display: flex;
   justify-content: flex-start;
-
 }
 
-.btn__destinations{
+.btn__destinations {
   height: 64px;
   width: 192px;
   color: #383838;
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
   border-radius: 8px 0 0 8px;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom:64px ;
+  margin-bottom: 64px;
 }
 
-.btn__destinations:nth-child(2){
+.btn__destinations:nth-child(2) {
   border-radius: 0;
 }
 
-.btn__destinations:nth-child(3){
+.btn__destinations:nth-child(3) {
   border-radius: 0 8px 8px 0;
   width: 238px;
 }
 
 /*.btn__destinations:hover,*/
-.btn__destinations:focus{
-  color: #FFFFFF;
-  background-color: #3077C6;
-  border-radius: 8px ;
+.btn__destinations:focus {
+  color: #ffffff;
+  background-color: #3077c6;
+  border-radius: 8px;
 }
 
 .main__destinations--parts {
@@ -511,34 +509,35 @@ h2::after {
   margin: 7px;
 }
 
-.main__destinations--parts .main__name--img{
+.main__destinations--parts .main__name--img {
   text-decoration: none;
-  color: #3077C6;
+  color: #3077c6;
 }
 
 .main__destinations--parts {
   position: relative;
 }
 
-.button__book{
+.button__book {
   position: absolute;
-  top:35%;
-  left:6%;
+  top: 35%;
+  left: 6%;
 }
 
-.button__book, .button__sign{
+.button__book,
+.button__sign {
   width: 128px;
   height: 48px;
-  border: 1px solid #3077C6;
+  border: 1px solid #3077c6;
   border-radius: 8px;
-  color: #3077C6;
+  color: #3077c6;
 }
 
 .button__switch--destinations {
   background-color: transparent;
 }
 
-.button__switch--destinations .icon__offer {
+.icon__arrow--destinations {
   position: absolute;
   width: 45px;
   height: 45px;
@@ -552,33 +551,31 @@ h2::after {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
   height: 200px;
 }
 
-.main__sign--icon{
+.main__sign--icon {
   padding-left: 24px;
   /*padding-top: 57px;*/
 }
 
-.icon__sign{
+.icon__sign {
   width: 86px;
   margin-right: 55px;
-
 }
-.main__sign--content{
-  margin-left:-20px
+.main__sign--content {
+  margin-left: -20px;
 }
 
-.discount{
+.discount {
   font-size: 24px;
   font-weight: 500;
   margin-top: -5px;
   margin-bottom: 20px;
 }
 
-.main__sign--content{
-
+.main__sign--content {
 }
 
 .main__sign--cross {
@@ -591,7 +588,7 @@ h2::after {
   background-color: transparent;
 }
 
-.button__cross > .icon__cross{
+.button__cross > .icon__cross {
   width: 26px;
   height: 26px;
 }
@@ -756,12 +753,12 @@ h2::after {
     margin: 0;
   }
 
-  .button__switch .icon__offer {
+ .icon__arrow--homes {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 45%;
-    left: 95%;
+    top: 47%;
+    left: 96%;
     transform: translate(-50%, -50%);
   }
 }
@@ -895,53 +892,53 @@ h2::after {
     right: 33px;
   }
 
-  .button__switch .icon__offer {
+  .icon__arrow--homes {
     position: absolute;
     width: 28px;
     height: 28px;
-    top: 37%;
-    left: 89%;
+    top: 40%;
+    left: 95%;
     transform: translate(-50%, -50%);
   }
 
-  .main__container--destinations{
+  .main__container--destinations {
     height: 379px;
   }
 
-  .main__destinations .main__title{
+  .main__destinations .main__title {
     margin-top: 15px;
   }
 
-  .buttons{
+  .buttons {
     justify-content: space-around;
     margin-top: 0;
   }
 
-  .btn__destinations{
+  .btn__destinations {
     height: 32px;
     width: 99px;
     color: #383838;
-    background-color: #FFFFFF;
-    border: 1px solid #F3F3F4;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
     border-radius: 4px;
     font-size: 19px;
     font-weight: 400;
-    margin-bottom:24px ;
+    margin-bottom: 24px;
     margin-right: 16px;
   }
 
-  .btn__destinations span{
+  .btn__destinations span {
     display: none;
   }
 
-  .btn__destinations:nth-child(3){
+  .btn__destinations:nth-child(3) {
     width: 99px;
     margin-right: 0;
   }
   .btn__destinations:nth-child(1),
   .btn__destinations:nth-child(2),
-  .btn__destinations:nth-child(3){
-  border-radius: 4px;
+  .btn__destinations:nth-child(3) {
+    border-radius: 4px;
   }
 
   .main__maldives,
@@ -963,10 +960,20 @@ h2::after {
     padding-bottom: 4px;
   }
 
-  .main__norway, .main__island, .main__destinations--button, .main__container--sign{
-    display: none;
+  .icon__arrow--destinations {
+    width: 28px;
+    height: 28px;
+    top: 35%;
+    left: 91%;
+    transform: rotate(0deg);
   }
 
+  .main__norway,
+  .main__island,
+  .button__book,
+  .main__container--sign {
+    display: none;
+  }
 
   .footer {
     background-image: url("../images/svg/logo_vector_footer.svg");
