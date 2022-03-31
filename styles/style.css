@@ -103,6 +103,7 @@ a {
 
 .header__icon {
   display: flex;
+  align-items: center;
 }
 
 .icon__night {
@@ -118,7 +119,7 @@ a {
   fill: #ffffff;
 }
 
-.icon__menu {
+.burger__menu {
   display: none;
 }
 
@@ -679,7 +680,7 @@ h2::after {
 
 @media screen and (max-width: 1200px) {
   .header__container {
-    padding: 51px 20px;
+    padding: 51px 17px;
   }
   .input__group--label {
     font-size: 14px;
@@ -776,6 +777,79 @@ h2::after {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .burger__menu {
+    display: flex;
+    top: 0;
+  }
+
+  .icon__menu {
+    width: 40px;
+    height: 25px;
+  }
+
+  .icon__menu:hover {
+    filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+      brightness(95%) contrast(102%);
+  }
+
+  .icon__account {
+    margin-right: 25px;
+  }
+
+  .section__header--top {
+    margin-bottom: 85px;
+  }
+
+  .header__name {
+    margin-bottom: 45px;
+    font-size: 35px;
+  }
+
+  .input__group {
+    flex-direction: column;
+    background-color: #f5bd41;
+    margin-bottom: 60px;
+  }
+
+  .container__forms--first,
+  .container__forms--second,
+  .container__forms--third,
+  .container__forms--button {
+    margin: 8px 8px 0 8px;
+    width: auto;
+    border: 0;
+  }
+  .container__forms--button{
+    margin-bottom: 8px;
+  }
+
+  .forms__check--in {
+    margin-right: 8px;
+  }
+
+  .input__group--input:focus {
+    border: 0;
+  }
+
+  .header__choice--people,
+  .header__choice--city,
+  .header__choice--data {
+    border-radius: 8px;
+    border:0;
+    height: 48px;
+  }
+
+  .container__forms--second .input__group--input:focus {
+    border: 0;
+    height: 48px;
+  }
+
+
+
   .col-m-6 {
     width: 50%;
   }
@@ -967,6 +1041,66 @@ h2::after {
 }
 
 @media screen and (max-width: 360px) {
+  .header__container{
+    height: 553px;
+    padding-top: 12px;
+  }
+
+  .logo__vector {
+    width: 122px;
+    height: 24px
+  }
+
+  .header__icon {
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  .header__button--light {
+    padding-right:0;
+  }
+
+  .icon__night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon__account {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .icon__menu {
+    width: 24px;
+    height: 16px;
+  }
+
+  .section__header--top {
+    margin-bottom: 47px;
+  }
+
+  .header__name {
+    margin-bottom: 31px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .input__group {
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+
+
+
+
+
+
+
+
+
   .main__offer {
     height: 641px;
   }
