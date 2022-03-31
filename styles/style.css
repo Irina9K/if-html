@@ -161,6 +161,10 @@ a {
   position: relative;
 }
 
+.icon__lens {
+  display: none;
+}
+
 .container__forms--first {
   width: 38%;
   /*position: relative;*/
@@ -201,6 +205,10 @@ label {
   left: 0;
   padding-top: 22px;
   padding-left: 30px;
+}
+
+.input__group--label span {
+  display: none;
 }
 
 input:focus ~ label,
@@ -823,7 +831,7 @@ h2::after {
     width: auto;
     border: 0;
   }
-  .container__forms--button{
+  .container__forms--button {
     margin-bottom: 8px;
   }
 
@@ -839,7 +847,7 @@ h2::after {
   .header__choice--city,
   .header__choice--data {
     border-radius: 8px;
-    border:0;
+    border: 0;
     height: 48px;
   }
 
@@ -847,8 +855,6 @@ h2::after {
     border: 0;
     height: 48px;
   }
-
-
 
   .col-m-6 {
     width: 50%;
@@ -1041,14 +1047,19 @@ h2::after {
 }
 
 @media screen and (max-width: 360px) {
-  .header__container{
-    height: 553px;
+  .header {
+    height: 533px;
+  }
+
+  .header__container {
     padding-top: 12px;
+    background-size: cover;
+    background-position: 88% 72%;
   }
 
   .logo__vector {
     width: 122px;
-    height: 24px
+    height: 24px;
   }
 
   .header__icon {
@@ -1057,7 +1068,7 @@ h2::after {
   }
 
   .header__button--light {
-    padding-right:0;
+    padding-right: 0;
   }
 
   .icon__night {
@@ -1093,13 +1104,51 @@ h2::after {
     margin-bottom: 32px;
   }
 
+  .container__forms--first .input__group--label {
+    font-size: 15px;
+    padding-top: 24px;
+    padding-left: 43px;
+    font-weight: 500;
+  }
 
+  .icon__lens {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 11%;
+    left: 6%;
+  }
 
+  .input__group--label span {
+    display: inline;
+  }
 
+  input:focus ~ label,
+  input:not(:focus):valid ~ label {
+    color: #383838;
+    top: -17px;
+    font-size: 12px;
+    font-weight: 400;
+  }
 
+  input:focus ~ .label__city,
+  input:not(:focus):valid ~ label {
+    color: #ffffff;
+    top: -45px;
+    font-size: 13px;
+  }
 
+  input:focus ~ .form__icon--lens,
+  input:not(:focus):valid ~ .form__icon--lens {
+    display: none;
+  }
 
-
+  input[type="date"] {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
 
   .main__offer {
     height: 641px;
@@ -1189,7 +1238,7 @@ h2::after {
     width: 28px;
     height: 28px;
     top: 40%;
-    left: 95%;
+    left: 92%;
     transform: translate(-50%, -50%);
   }
 

@@ -35,7 +35,9 @@
             </div>
             <div class="header__icon--account">
               <svg class="icon__account">
-                <use xlink:href="./images/sprite/sprite.svg#account_circle"></use>
+                <use
+                  xlink:href="./images/sprite/sprite.svg#account_circle"
+                ></use>
               </svg>
             </div>
 
@@ -44,7 +46,6 @@
                 <use xlink:href="./images/sprite/sprite.svg#menu"></use>
               </svg>
             </div>
-
           </div>
         </section>
         <section class="section section__header--foundation">
@@ -62,9 +63,15 @@
                 name="city"
                 required
               />
-              <label class="input__group--label" for="city">
+              <label class="input__group--label label__city" for="city">
                 Your destination or hotel name
               </label>
+              <div class="form__icon--lens">
+                <svg class="icon__lens">
+                  <use xlink:href="./images/sprite/sprite.svg#lens"></use>
+                </svg>
+              </div>
+
             </div>
 
             <div class="container__forms--second">
@@ -78,8 +85,8 @@
                   name="data"
                   required
                 />
-                <label class="input__group--label" for="datain"
-                  >Check-in
+                <label class="input__group--label label__data" for="datain"
+                  >Check-in <span>date</span>
                 </label>
               </div>
 
@@ -93,8 +100,8 @@
                   name="data"
                   required
                 />
-                <label class="input__group--label" for="dataout">
-                  Check-out
+                <label class="input__group--label label__data" for="dataout">
+                  Check-out <span>date</span>
                 </label>
               </div>
             </div>
@@ -106,7 +113,7 @@
                 name="people-room"
                 required
               />
-              <label class="input__group--label" for="people-room"> </label>
+              <label class="input__group--label label__people" for="people-room"> </label>
             </div>
 
             <div class="container__forms--button">
