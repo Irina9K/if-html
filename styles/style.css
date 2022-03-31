@@ -207,6 +207,15 @@ label {
   padding-left: 30px;
 }
 
+.label__people {
+  top: 0;
+  left: 59%;
+}
+
+.label__data {
+  top: -4px;
+}
+
 .input__group--label span {
   display: none;
 }
@@ -215,6 +224,12 @@ input:focus ~ label,
 input:not(:focus):valid ~ label {
   color: #ffffff;
   top: -70px;
+}
+
+input:focus ~ .label__people,
+input:not(:focus):valid ~ .label__people {
+  color: transparent;
+  top: 0;
 }
 
 input[type="date"] {
@@ -854,6 +869,17 @@ h2::after {
   .container__forms--second .input__group--input:focus {
     border: 0;
     height: 48px;
+  }
+
+  .label__people {
+    top: 52%;
+    left: 1%;
+  }
+
+  input:focus ~ .label__people,
+  input:not(:focus):valid ~ .label__people {
+    color: transparent;
+    top: 52%;
   }
 
   .col-m-6 {
