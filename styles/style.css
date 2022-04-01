@@ -556,10 +556,18 @@ h2::after {
   position: relative;
 }
 
+.wrapper__destinations__img {
+  position: relative;
+}
+
 .button__book {
   position: absolute;
-  top: 35%;
-  left: 6%;
+  top: 44%;
+  left: 26%;
+}
+
+.main__destinations--button {
+  display: none;
 }
 
 .button__book,
@@ -569,6 +577,10 @@ h2::after {
   border: 1px solid #3077c6;
   border-radius: 8px;
   color: #3077c6;
+}
+
+.wrapper__destinations__img:hover .main__destinations--button {
+  display: block;
 }
 
 .button__switch--destinations {
