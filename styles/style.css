@@ -226,11 +226,11 @@ input:not(:focus):valid ~ label {
   top: -70px;
 }
 
-input:focus ~ .label__people,
+/* input:focus ~ .label__people,
 input:not(:focus):valid ~ .label__people {
   color: transparent;
   top: 0;
-}
+} */
 
 input[type='date'] {
   font-family: 'Roboto', sans-serif;
@@ -574,8 +574,7 @@ h2::after {
   display: none;
 }
 
-.button__book
-{
+.button__book {
   width: 45%;
   height: 18%;
   border: 1px solid #3077c6;
@@ -630,12 +629,12 @@ h2::after {
 }
 
 .button__sign {
-   width: 128px;
-   height: 48px;
-   border: 1px solid #3077c6;
-   border-radius: 8px;
-   color: #3077c6;
- }
+  width: 128px;
+  height: 48px;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  color: #3077c6;
+}
 
 /* .main__sign--content {
 } */
@@ -896,15 +895,76 @@ h2::after {
     height: 48px;
   }
 
-  .label__people {
-    top: 52%;
-    left: 1%;
+  .input__group--label {
+    /* padding-top: 26px; */
+    font-weight: 500;
   }
 
-  input:focus ~ .label__people,
-  input:not(:focus):valid ~ .label__people {
+  .label__city {
+    padding-left: 48px;
+    padding-top: 27px;
+  }
+
+  .label__data {
+    padding-left: 25px;
+    padding-top: 22px;
+  }
+
+  .label__people {
+    top: 51%;
+    left: 3%;
+  }
+
+  input:focus ~ .label__city {
+    /* input:not(:focus):valid ~ label { */
+    color: #383838;
+    top: -15px;
+    left: -15px;
+    font-weight: 400;
+  }
+
+  input:not(:focus):valid ~ label {
     color: transparent;
-    top: 52%;
+  }
+
+  input[type='search'] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+
+  input:focus ~ .label__data {
+    /* input:not(:focus):valid ~ .label__data { */
+    color: #383838;
+    top: -15px;
+    font-weight: 400;
+  }
+
+  input[type='date'] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  input:focus ~ .label__people {
+    /* input:not(:focus):valid ~ .label__people { */
+    color: #383838;
+    top: 45%;
+    font-weight: 400;
+  }
+
+  .icon__lens {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 11%;
+    left: 3%;
+  }
+
+  input:focus ~ .form__icon--lens,
+  input:not(:focus):valid ~ .form__icon--lens {
+    display: none;
   }
 
   .col-m-6 {
@@ -1059,8 +1119,8 @@ h2::after {
     height: 530px;
   }
 
-  .button__book{
-     font-size: 8px;
+  .button__book {
+    font-size: 8px;
   }
 
   .icon__arrow--destinations {
@@ -1178,19 +1238,24 @@ h2::after {
     display: inline;
   }
 
-  input:focus ~ label,
-  input:not(:focus):valid ~ label {
+  input:focus ~ label {
     color: #383838;
     top: -17px;
     font-size: 12px;
     font-weight: 400;
   }
 
-  input:focus ~ .label__city,
-  input:not(:focus):valid ~ label {
-    color: #ffffff;
-    top: -45px;
+  input:focus ~ .label__city {
+    color: #383838;
+    top: -15px;
     font-size: 13px;
+  }
+
+  input:focus ~ .label__people {
+    /* input:not(:focus):valid ~ .label__people { */
+    color: #383838;
+
+    font-weight: 400;
   }
 
   input:focus ~ .form__icon--lens,
@@ -1202,6 +1267,10 @@ h2::after {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 500;
+  }
+
+  input:not(:focus):valid ~ label {
+    color: transparent;
   }
 
   .main__offer {
@@ -1355,9 +1424,9 @@ h2::after {
     padding-bottom: 4px;
   }
 
-  .button__book{
-   font-size: 10px;
-}
+  .button__book {
+    font-size: 10px;
+  }
 
   .icon__arrow--destinations {
     width: 28px;
