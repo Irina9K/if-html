@@ -566,7 +566,7 @@ h2::after {
 
 .button__book {
   position: absolute;
-  top: 44%;
+  top: 40%;
   left: 26%;
 }
 
@@ -574,13 +574,14 @@ h2::after {
   display: none;
 }
 
-.button__book,
-.button__sign {
-  width: 128px;
-  height: 48px;
+.button__book
+{
+  width: 45%;
+  height: 18%;
   border: 1px solid #3077c6;
   border-radius: 8px;
   color: #3077c6;
+  font-size: 1em;
 }
 
 .wrapper__destinations__img:hover .destinations__button--book {
@@ -627,6 +628,14 @@ h2::after {
   margin-top: -5px;
   margin-bottom: 20px;
 }
+
+.button__sign {
+   width: 128px;
+   height: 48px;
+   border: 1px solid #3077c6;
+   border-radius: 8px;
+   color: #3077c6;
+ }
 
 /* .main__sign--content {
 } */
@@ -965,7 +974,6 @@ h2::after {
     height: 870px;
   }
 
-  .button__book,
   .main__container--sign {
     display: none;
   }
@@ -1049,6 +1057,10 @@ h2::after {
 
   .main__destinations {
     height: 530px;
+  }
+
+  .button__book{
+     font-size: 8px;
   }
 
   .icon__arrow--destinations {
@@ -1343,6 +1355,10 @@ h2::after {
     padding-bottom: 4px;
   }
 
+  .button__book{
+   font-size: 10px;
+}
+
   .icon__arrow--destinations {
     width: 28px;
     height: 28px;
@@ -1353,7 +1369,6 @@ h2::after {
 
   .main__norway,
   .main__island,
-  .button__book,
   .main__container--sign {
     display: none;
   }
