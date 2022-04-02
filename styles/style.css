@@ -1,4 +1,4 @@
-@import "../styles/fonts.css";
+@import '../styles/fonts.css';
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
   color: #383838;
@@ -25,7 +25,7 @@ a {
 }
 
 .header {
-  background-image: url("../images/png/castelmezzano.png");
+  background-image: url('../images/png/castelmezzano.png');
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
@@ -70,7 +70,7 @@ a {
   display: block;
   width: calc(100% - 35px);
   height: 4px;
-  content: "";
+  content: '';
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -232,8 +232,8 @@ input:not(:focus):valid ~ .label__people {
   top: 0;
 }
 
-input[type="date"] {
-  font-family: "Roboto", sans-serif;
+input[type='date'] {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 
@@ -341,7 +341,7 @@ h2::after {
   display: block;
   width: 100px;
   height: 4px;
-  content: "";
+  content: '';
   background-color: #f5bd41;
   top: 187px;
   left: 37%;
@@ -560,6 +560,10 @@ h2::after {
   position: relative;
 }
 
+.destinations__img {
+  width: 100%;
+}
+
 .button__book {
   position: absolute;
   top: 44%;
@@ -624,8 +628,8 @@ h2::after {
   margin-bottom: 20px;
 }
 
-.main__sign--content {
-}
+/* .main__sign--content {
+} */
 
 .main__sign--cross {
   position: absolute;
@@ -727,12 +731,12 @@ h2::after {
     margin-left: 71px;
   }
 
-  .footer__about,
+  /* .footer__about,
   .footer__property,
-  .footer__support {
-    /*width: calc(33% - 180px);*/
-    /*margin-right: 180px;*/
-  }
+  .footer__support { */
+  /*width: calc(33% - 180px);*/
+  /*margin-right: 180px;*/
+  /* } */
 
   .footer__copyright {
     margin-left: 71px;
@@ -1056,7 +1060,7 @@ h2::after {
   }
 
   .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-image: url('../images/svg/logo_vector_footer.svg');
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;
@@ -1182,8 +1186,8 @@ h2::after {
     display: none;
   }
 
-  input[type="date"] {
-    font-family: "Roboto", sans-serif;
+  input[type='date'] {
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 500;
   }
@@ -1355,7 +1359,7 @@ h2::after {
   }
 
   .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-image: url('../images/svg/logo_vector_footer.svg');
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;
