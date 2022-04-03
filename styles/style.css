@@ -1,14 +1,20 @@
-@import "../styles/fonts.css";
+@import '../styles/fonts.css';
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   max-width: 1440px;
   margin: 0 auto;
   color: #383838;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -19,8 +25,10 @@ body {
 }
 
 .header {
-  background-image: url("../images/png/castelmezzano.png");
+  background-image: url('../images/png/castelmezzano.png');
+  background-position: top center;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .header__container {
@@ -29,15 +37,15 @@ body {
   padding: 51px 0;
 }
 
-.logo__vector {
-  width: 205px;
-  height: 40px;
-}
-
 .section__header--top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.logo__vector {
+  width: 205px;
+  height: 40px;
 }
 
 .nav__list {
@@ -51,7 +59,6 @@ body {
 }
 
 .nav__link {
-  text-decoration: none;
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
@@ -63,7 +70,7 @@ body {
   display: block;
   width: calc(100% - 35px);
   height: 4px;
-  content: "";
+  content: '';
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -94,8 +101,9 @@ body {
   padding-right: 25px;
 }
 
-.header__light {
+.header__icon {
   display: flex;
+  align-items: center;
 }
 
 .icon__night {
@@ -109,6 +117,10 @@ body {
   width: 42px;
   height: 42px;
   fill: #ffffff;
+}
+
+.burger__menu {
+  display: none;
 }
 
 .icon__night,
@@ -136,29 +148,99 @@ body {
   font-style: normal;
   font-size: 50px;
   color: #ffffff;
-  margin-bottom: 98px;
-}
-
-.input__group--label {
-  color: #ffffff;
-  padding-left: 25px;
-}
-
-.input1,
-.input2,
-.input3 {
-  background-color: white;
-  margin-top: 22px;
-}
-
-.input1 {
-  border-radius: 8px 0 0 8px;
+  margin-bottom: 145px;
 }
 
 .input__group {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 120px;
+  max-width: 1232px;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+  position: relative;
+}
+
+.icon__lens {
+  display: none;
+}
+
+.container__forms--first {
+  width: 38%;
+  /*position: relative;*/
+}
+
+.container__forms--second {
+  display: flex;
+  width: 21%;
+  height: 64px;
+  position: relative;
+  margin-top: 0;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
+.forms__check--in {
+  width: 50%;
+  position: relative;
+}
+
+.forms__check--out {
+  width: 50%;
+  position: relative;
+}
+
+.container__forms--third {
+  width: 25%;
+}
+
+label {
+  position: absolute;
+  transition: 0.5s;
+}
+
+.input__group--label {
+  color: #383838;
+  top: 0;
+  left: 0;
+  padding-top: 22px;
+  padding-left: 30px;
+}
+
+.label__people {
+  top: 0;
+  left: 59%;
+}
+
+.label__data {
+  top: -4px;
+}
+
+.input__group--label span {
+  display: none;
+}
+
+input:focus ~ label,
+input:not(:focus):valid ~ label {
+  color: #ffffff;
+  top: -70px;
+}
+
+/* input:focus ~ .label__people,
+input:not(:focus):valid ~ .label__people {
+  color: transparent;
+  top: 0;
+} */
+
+input[type='date'] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.container__forms--button {
+  /*background-color: #f3f3f4;*/
+  height: 64px;
+  width: 16%;
 }
 
 .input__group--input,
@@ -180,19 +262,27 @@ body {
   outline-offset: 0;
 }
 
+.container__forms--second .input__group--input:focus {
+  border: 0;
+  height: 56px;
+}
+
 .header__choice--city {
-  width: 467px;
+  width: 100%;
   border-radius: 8px 0 0 8px;
   border-left: 3px solid #f3f3f4;
   border-right: 0;
 }
 
 .header__choice--data {
-  width: 259px;
+  width: 100%;
+  height: 56px;
+  border-top: 3px solid #f3f3f4;
+  border-bottom: 3px solid #f3f3f4;
 }
 
 .header__choice--people {
-  width: 314px;
+  width: 100%;
 }
 
 .header__choice--people,
@@ -202,8 +292,7 @@ body {
 }
 
 .header__choice--city,
-.header__choice--people,
-.header__choice--data {
+.header__choice--people {
   height: 64px;
   border-top: 3px solid #f3f3f4;
   border-bottom: 3px solid #f3f3f4;
@@ -211,13 +300,13 @@ body {
 
 .header__button {
   height: 64px;
-  width: 192px;
+  width: 100%;
   color: #ffffff;
   background-color: #3077c6;
   border-radius: 8px;
   border: 0;
   font-size: 24px;
-  margin-top: 43px;
+  /*margin-top: 43px;*/
 }
 
 .header__app {
@@ -237,7 +326,7 @@ body {
 }
 
 h2 {
-  padding-top: 85px;
+  padding-top: 119px;
   font-size: 40px;
   margin-bottom: 100px;
   font-weight: 500;
@@ -252,7 +341,7 @@ h2::after {
   display: block;
   width: 100px;
   height: 4px;
-  content: "";
+  content: '';
   background-color: #f5bd41;
   top: 187px;
   left: 37%;
@@ -269,7 +358,7 @@ h2::after {
 .main__offer--parts {
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main__support,
@@ -346,7 +435,7 @@ h2::after {
 }
 
 .main__russia,
-.main__spain,
+.main__spain--homes,
 .main__slowakia,
 .main__germany {
   display: flex;
@@ -378,17 +467,191 @@ h2::after {
   position: relative;
 }
 
-.button__switch {
+.button__switch--homes {
   background-color: transparent;
 }
 
-.button__switch .icon__offer {
+.icon__arrow--homes {
   position: absolute;
   width: 45px;
   height: 45px;
   top: 33%;
   left: 98%;
   transform: translate(-50%, -50%);
+}
+
+.main__destinations {
+  max-width: 1232px;
+  margin: 0 auto;
+  height: 958px;
+}
+
+.row__destinations {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__destinations .main__title {
+  position: relative;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn__destinations {
+  height: 64px;
+  width: 192px;
+  color: #383838;
+  background-color: #f3f3f4;
+  border-radius: 8px 0 0 8px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 64px;
+}
+
+.btn__destinations:nth-child(2) {
+  border-radius: 0;
+}
+
+.btn__destinations:nth-child(3) {
+  border-radius: 0 8px 8px 0;
+  width: 238px;
+}
+
+/*.btn__destinations:hover,*/
+.btn__destinations:focus {
+  color: #ffffff;
+  background-color: #3077c6;
+  border-radius: 8px;
+}
+
+.main__destinations--parts {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.main__maldives,
+.main__spain,
+.main__norway,
+.main__island {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 15px);
+  margin: 7px;
+}
+
+.main__destinations--parts .main__name--img {
+  text-decoration: none;
+  color: #3077c6;
+}
+
+.main__destinations--parts {
+  position: relative;
+}
+
+.wrapper__destinations__img {
+  position: relative;
+}
+
+.destinations__img {
+  width: 100%;
+}
+
+.button__book {
+  position: absolute;
+  top: 40%;
+  left: 26%;
+}
+
+.destinations__button--book {
+  display: none;
+}
+
+.button__book {
+  width: 45%;
+  height: 18%;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  color: #3077c6;
+  font-size: 1em;
+}
+
+.wrapper__destinations__img:hover .destinations__button--book {
+  display: block;
+}
+
+.button__switch--destinations {
+  background-color: transparent;
+}
+
+.icon__arrow--destinations {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 109%;
+  left: 48%;
+  transform: rotate(90deg);
+}
+
+.row-sign {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #eaf0f9;
+  height: 200px;
+}
+
+.main__sign--icon {
+  padding-left: 24px;
+}
+
+.icon__sign {
+  width: 86px;
+  margin-right: 55px;
+}
+.main__sign--content {
+  margin-left: -20px;
+}
+
+.discount {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.button__sign {
+  width: 128px;
+  height: 48px;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  color: #3077c6;
+}
+
+/* .main__sign--content {
+} */
+
+.main__sign--cross {
+  position: absolute;
+  top: 13%;
+  left: 96%;
+}
+
+.button__cross {
+  background-color: transparent;
+}
+
+.button__cross > .icon__cross {
+  width: 26px;
+  height: 26px;
 }
 
 .footer__container {
@@ -406,7 +669,6 @@ h2::after {
 .row-footer {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: center;*/
   align-items: center;
   margin: 0;
 }
@@ -415,7 +677,6 @@ h2::after {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
-  /*justify-content: space-between;*/
   margin-top: 110px;
 }
 
@@ -425,8 +686,6 @@ h2::after {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*width: calc(33% - 208px);*/
-  /*margin-right: 208px;*/
   padding-left: 0;
 }
 
@@ -467,17 +726,25 @@ h2::after {
 }
 
 @media screen and (max-width: 1200px) {
+  .header__container {
+    padding: 51px 17px;
+  }
+  .input__group--label {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
   .nav__footer--parts {
     font-size: 18px;
     margin-left: 71px;
   }
 
-  .footer__about,
+  /* .footer__about,
   .footer__property,
-  .footer__support {
-    /*width: calc(33% - 180px);*/
-    /*margin-right: 180px;*/
-  }
+  .footer__support { */
+  /*width: calc(33% - 180px);*/
+  /*margin-right: 180px;*/
+  /* } */
 
   .footer__copyright {
     margin-left: 71px;
@@ -485,6 +752,69 @@ h2::after {
 }
 
 @media screen and (max-width: 800px) {
+  .header {
+    background-position: center center;
+    height: 700px;
+  }
+
+  .logo__vector {
+    width: 190px;
+    height: 32px;
+  }
+
+  .nav__link {
+    font-size: 20px;
+  }
+
+  .section__header--top {
+    margin-bottom: 125px;
+  }
+
+  .header__name {
+    font-size: 40px;
+    margin-bottom: 85px;
+  }
+
+  .input__group {
+    margin-bottom: 95px;
+  }
+  .input__group--label {
+    font-size: 12px;
+    padding-top: 17px;
+  }
+
+  .container__forms--second {
+    height: 48px;
+  }
+
+  .header__choice--data {
+    width: 100%;
+    height: 43px;
+  }
+
+  .header__choice--city,
+  .header__choice--people {
+    height: 48px;
+  }
+
+  .container__forms--button {
+    /* background-color: #f3f3f4; */
+    height: 48px;
+  }
+
+  .header__button {
+    height: 48px;
+    font-size: 19px;
+  }
+
+  .main__homes {
+    height: 690px;
+  }
+
+  .main__destinations {
+    height: 750px;
+  }
+
   .footer__about,
   .footer__property,
   .footer__support {
@@ -494,6 +824,149 @@ h2::after {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .burger__menu {
+    display: flex;
+    top: 0;
+  }
+
+  .icon__menu {
+    width: 40px;
+    height: 25px;
+  }
+
+  .icon__menu:hover {
+    filter: invert(22%) sepia(45%) saturate(672%) hue-rotate(344deg)
+      brightness(95%) contrast(102%);
+  }
+
+  .icon__account {
+    margin-right: 25px;
+  }
+
+  .section__header--top {
+    margin-bottom: 85px;
+  }
+
+  .header__name {
+    margin-bottom: 45px;
+    font-size: 35px;
+  }
+
+  .input__group {
+    flex-direction: column;
+    background-color: #f5bd41;
+    margin-bottom: 60px;
+  }
+
+  .container__forms--first,
+  .container__forms--second,
+  .container__forms--third,
+  .container__forms--button {
+    margin: 8px 8px 0 8px;
+    width: auto;
+    border: 0;
+  }
+  .container__forms--button {
+    margin-bottom: 8px;
+  }
+
+  .forms__check--in {
+    margin-right: 8px;
+  }
+
+  .input__group--input:focus {
+    border: 0;
+  }
+
+  .header__choice--people,
+  .header__choice--city,
+  .header__choice--data {
+    border-radius: 8px;
+    border: 0;
+    height: 48px;
+  }
+
+  .container__forms--second .input__group--input:focus {
+    border: 0;
+    height: 48px;
+  }
+
+  .input__group--label {
+    /* padding-top: 26px; */
+    font-weight: 500;
+  }
+
+  .label__city {
+    padding-left: 48px;
+    padding-top: 27px;
+  }
+
+  .label__data {
+    padding-left: 25px;
+    padding-top: 22px;
+  }
+
+  .label__people {
+    top: 51%;
+    left: 3%;
+  }
+
+  input:focus ~ .label__city {
+    /* input:not(:focus):valid ~ label { */
+    color: #383838;
+    top: -15px;
+    left: -15px;
+    font-weight: 400;
+  }
+
+  input:not(:focus):valid ~ label {
+    color: transparent;
+  }
+
+  input[type='search'] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+
+  input:focus ~ .label__data {
+    /* input:not(:focus):valid ~ .label__data { */
+    color: #383838;
+    top: -15px;
+    font-weight: 400;
+  }
+
+  input[type='date'] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  input:focus ~ .label__people {
+    /* input:not(:focus):valid ~ .label__people { */
+    color: #383838;
+    top: 45%;
+    font-weight: 400;
+  }
+
+  .icon__lens {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 11%;
+    left: 3%;
+  }
+
+  input:focus ~ .form__icon--lens,
+  input:not(:focus):valid ~ .form__icon--lens {
+    display: none;
+  }
+
   .col-m-6 {
     width: 50%;
   }
@@ -523,13 +996,14 @@ h2::after {
 
   .main__homes--hotel {
     justify-content: center;
+    padding: 8px;
   }
 
   .title_homes {
     margin: 0;
   }
 
-  .main__spain,
+  .main__spain--homes,
   .main__russia,
   .main__germany,
   .main__slowakia {
@@ -537,13 +1011,9 @@ h2::after {
     width: calc(50% - 80px);
   }
 
-  .main__homes--hotel {
-    padding: 8px;
-  }
-
   .main__name--img,
   .main__name--country {
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 5px;
   }
 
@@ -551,12 +1021,67 @@ h2::after {
     margin: 0;
   }
 
-  .button__switch .icon__offer {
+  .icon__arrow--homes {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 45%;
-    left: 95%;
+    top: 48%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main__destinations {
+    height: 870px;
+  }
+
+  .main__container--sign {
+    display: none;
+  }
+
+  .btn__destinations span {
+    display: none;
+  }
+
+  .buttons {
+    justify-content: space-around;
+  }
+
+  .btn__destinations:nth-child(1),
+  .btn__destinations:nth-child(2),
+  .btn__destinations:nth-child(3) {
+    border-radius: 8px;
+    width: 100px;
+  }
+
+  .btn__destinations {
+    height: 45px;
+    color: #383838;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
+    font-size: 21px;
+    font-weight: 400;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+
+  .main__destinations--parts {
+    justify-content: center;
+  }
+
+  .main__maldives,
+  .main__spain,
+  .main__norway,
+  .main__island {
+    margin-left: 40px;
+    width: calc(50% - 80px);
+  }
+
+  .icon__arrow--destinations {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 48%;
+    left: 96%;
     transform: translate(-50%, -50%);
   }
 }
@@ -571,14 +1096,43 @@ h2::after {
     font-size: 12px;
     padding-top: 5px;
   }
+
+  .main__destinations {
+    height: 650px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .main__homes {
-    height: 600px;
+    height: 570px;
   }
+
+  .icon__arrow--homes {
+    width: 28px;
+    height: 28px;
+    top: 46%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main__destinations {
+    height: 530px;
+  }
+
+  .button__book {
+    font-size: 8px;
+  }
+
+  .icon__arrow--destinations {
+    width: 28px;
+    height: 28px;
+    top: 48%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+  }
+
   .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-image: url('../images/svg/logo_vector_footer.svg');
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;
@@ -607,6 +1161,118 @@ h2::after {
 }
 
 @media screen and (max-width: 360px) {
+  .header {
+    height: 533px;
+  }
+
+  .header__container {
+    padding-top: 12px;
+    background-size: cover;
+    background-position: 88% 72%;
+  }
+
+  .logo__vector {
+    width: 122px;
+    height: 24px;
+  }
+
+  .header__icon {
+    justify-content: space-between;
+    width: 100px;
+  }
+
+  .header__button--light {
+    padding-right: 0;
+  }
+
+  .icon__night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon__account {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+  }
+
+  .icon__menu {
+    width: 24px;
+    height: 16px;
+  }
+
+  .section__header--top {
+    margin-bottom: 47px;
+  }
+
+  .header__name {
+    margin-bottom: 31px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .input__group {
+    border-radius: 0;
+    margin-bottom: 32px;
+  }
+
+  .container__forms--first .input__group--label {
+    font-size: 15px;
+    padding-top: 24px;
+    padding-left: 43px;
+    font-weight: 500;
+  }
+
+  .icon__lens {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 11%;
+    left: 6%;
+  }
+
+  .input__group--label span {
+    display: inline;
+  }
+
+  input:focus ~ label {
+    color: #383838;
+    top: -17px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  input:focus ~ .label__city {
+    color: #383838;
+    top: -15px;
+    font-size: 13px;
+  }
+
+  input:focus ~ .label__people {
+    /* input:not(:focus):valid ~ .label__people { */
+    color: #383838;
+
+    font-weight: 400;
+  }
+
+  input:focus ~ .form__icon--lens,
+  input:not(:focus):valid ~ .form__icon--lens {
+    display: none;
+  }
+
+  input[type='date'] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:not(:focus):valid ~ label {
+    color: transparent;
+  }
+
   .main__offer {
     height: 641px;
   }
@@ -663,7 +1329,7 @@ h2::after {
     display: none;
   }
 
-  .main__spain,
+  .main__spain--homes,
   .main__russia {
     width: calc(50% - 32px);
     margin-left: 0;
@@ -690,17 +1356,94 @@ h2::after {
     right: 33px;
   }
 
-  .button__switch .icon__offer {
+  .icon__arrow--homes {
     position: absolute;
     width: 28px;
     height: 28px;
-    top: 37%;
-    left: 89%;
+    top: 40%;
+    left: 92%;
     transform: translate(-50%, -50%);
   }
 
+  .main__container--destinations {
+    height: 379px;
+  }
+
+  .main__destinations .main__title {
+    margin-top: 15px;
+  }
+
+  .buttons {
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .btn__destinations {
+    height: 32px;
+    width: 99px;
+    color: #383838;
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
+    border-radius: 4px;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    margin-right: 16px;
+  }
+
+  .btn__destinations span {
+    display: none;
+  }
+
+  .btn__destinations:nth-child(3) {
+    width: 99px;
+    margin-right: 0;
+  }
+  .btn__destinations:nth-child(1),
+  .btn__destinations:nth-child(2),
+  .btn__destinations:nth-child(3) {
+    border-radius: 4px;
+  }
+
+  .main__maldives,
+  .main__spain {
+    width: calc(50% - 21px);
+    margin-left: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main__name--img {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 4px;
+    text-align: left;
+  }
+
+  .main__name--img {
+    padding-bottom: 4px;
+  }
+
+  .button__book {
+    font-size: 10px;
+  }
+
+  .icon__arrow--destinations {
+    width: 28px;
+    height: 28px;
+    top: 38%;
+    left: 91%;
+    transform: rotate(0deg);
+  }
+
+  .main__norway,
+  .main__island,
+  .main__container--sign {
+    display: none;
+  }
+
   .footer {
-    background-image: url("../images/svg/logo_vector_footer.svg");
+    background-image: url('../images/svg/logo_vector_footer.svg');
     background-repeat: no-repeat;
     background-position: top 40px center;
     height: 203px;

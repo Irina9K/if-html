@@ -11,9 +11,11 @@
       <div class="container header__container">
         <section class="section section__header--top">
           <div class="header__logo">
-            <svg class="logo__vector">
-              <use xlink:href="./images/sprite/sprite.svg#logo_vector"></use>
-            </svg>
+            <a href="#">
+              <svg class="logo__vector">
+                <use xlink:href="./images/sprite/sprite.svg#logo_vector"></use>
+              </svg>
+            </a>
           </div>
           <nav class="nav">
             <ul class="nav__list">
@@ -23,15 +25,27 @@
               </li>
             </ul>
           </nav>
-          <div class="header__light">
-            <button class="btn header__button--light">
-              <svg class="icon__night">
-                <use xlink:href="./images/sprite/sprite.svg#night"></use>
+          <div class="header__icon">
+            <div class="header__icon--light">
+              <button class="btn header__button--light">
+                <svg class="icon__night">
+                  <use xlink:href="./images/sprite/sprite.svg#night"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__icon--account">
+              <svg class="icon__account">
+                <use
+                  xlink:href="./images/sprite/sprite.svg#account_circle"
+                ></use>
               </svg>
-            </button>
-            <svg class="icon__account">
-              <use xlink:href="./images/sprite/sprite.svg#account_circle"></use>
-            </svg>
+            </div>
+
+            <div class="burger__menu">
+              <svg class="icon__menu">
+                <use xlink:href="./images/sprite/sprite.svg#menu"></use>
+              </svg>
+            </div>
           </div>
         </section>
         <section class="section section__header--foundation">
@@ -41,47 +55,72 @@
           </h1>
 
           <form class="input__group">
-            <div class="container__forms">
-              <label class="input__group--label" for="city">
+            <div class="container__forms--first">
+              <input
+                class="input__group--input header__choice--city"
+                type="search"
+                id="city"
+                name="city"
+                required
+              />
+              <label class="input__group--label label__city" for="city">
                 Your destination or hotel name
               </label>
-              <div class="input1">
-                <input
-                  class="input__group--input header__choice--city"
-                  type="search"
-                  id="city"
-                  name="city"
-                  placeholder="New York"
-                />
+              <div class="form__icon--lens">
+                <svg class="icon__lens">
+                  <use xlink:href="./images/sprite/sprite.svg#lens"></use>
+                </svg>
               </div>
             </div>
-            <div class="container__forms">
-              <label class="input__group--label" for="data"
-                >Check-in &#8211; Check-out
-              </label>
-              <div class="input2">
+
+            <div class="container__forms--second">
+              <div class="forms__check--in">
                 <input
                   class="input__group--input header__choice--data"
-                  type="date"
-                  id="data"
-                  name="data"
-                />
-              </div>
-            </div>
-            <div class="container__forms">
-              <label class="input__group--label" for="people-room"> </label
-              ><br />
-              <div class="input3">
-                <input
-                  class="input__group--input header__choice--people"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
                   type="text"
-                  id="people-room"
-                  name="people-room"
-                  placeholder="2 Adults &#8211; 0 Children &#8211; 1 Room"
+                  id="datain"
+                  name="data"
+                  required
                 />
+                <label class="input__group--label label__data" for="datain"
+                  >Check-in <span>date</span>
+                </label>
+              </div>
+
+              <div class="forms__check--out">
+                <input
+                  class="input__group--input header__choice--data"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='text')"
+                  type="text"
+                  id="dataout"
+                  name="data"
+                  required
+                />
+                <label class="input__group--label label__data" for="dataout">
+                  Check-out <span>date</span>
+                </label>
               </div>
             </div>
-            <div class="container__button">
+            <div class="container__forms--third">
+              <input
+                class="input__group--input header__choice--people"
+                type="text"
+                id="people-room"
+                name="people-room"
+                required
+              />
+              <label
+                class="input__group--label label__people"
+                for="people-room"
+              >
+                2 Adults &#8212; 0 Children &#8212; 1 Room</label
+              >
+            </div>
+
+            <div class="container__forms--button">
               <button class="btn header__button">Search</button>
             </div>
           </form>
@@ -151,7 +190,7 @@
                   Saint Petersburg, Russia
                 </figcaption>
               </figure>
-              <figure class="main__spain col-s-6 col-m-4">
+              <figure class="main__spain--homes col-s-6 col-m-4">
                 <img
                   src="./images/png/apartment_sunshine.png"
                   alt="apartment_sunshine"
@@ -185,12 +224,124 @@
                 </figcaption>
               </figure>
               <div class="main__homes--button">
-                <button class="btn button__switch">
-                  <svg class="icon__offer">
+                <button class="btn button__switch--homes">
+                  <svg class="icon__arrow--homes">
                     <use xlink:href="./images/sprite/sprite.svg#arrow"></use>
                   </svg>
                 </button>
               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container main__container--destinations">
+        <section class="main__destinations">
+          <div class="row__destinations">
+            <div class="main__title">
+              <h2>The best destinations</h2>
+            </div>
+            <div class="buttons">
+              <button class="btn btn__destinations">Regions</button>
+              <button class="btn btn__destinations">Cities</button>
+              <button class="btn btn__destinations">
+                Places <span>of interest</span>
+              </button>
+            </div>
+            <div class="main__destinations--parts col-12">
+              <figure class="main__maldives col-3 col-m-6 col-s-12">
+               <div class="wrapper__destinations__img">
+                  <img
+                    class="destinations__img"
+                    src="./images/svg/maldives.svg"
+                    alt="maldives"
+                  />
+                  <div class="destinations__button--book">
+                    <button class="btn button__book">Book now</button>
+                  </div>
+               </div>
+                <figcaption class="main__name--img">
+                  <a class="nav__link--country" href="#">Maldives</a>
+                </figcaption>
+              </figure>
+
+              <figure class="main__spain col-3 col-m-6 col-s-12">
+               <div class="wrapper__destinations__img">
+                  <img
+                    class="destinations__img"
+                    src="./images/svg/spain.svg"
+                    alt="spain"
+                  />
+                  <div class="destinations__button--book">
+                    <button class="btn button__book">Book now</button>
+                  </div>
+               </div>
+                <figcaption class="main__name--img">
+                  <a class="nav__link--country" href="#">Spain</a>
+                </figcaption>
+              </figure>
+              <figure class="main__norway col-3 col-m-6 col-s-12">
+               <div class="wrapper__destinations__img">
+                  <img
+                    class="destinations__img"
+                    src="./images/svg/norway.svg"
+                    alt="norway"
+                  />
+                  <div class="destinations__button--book">
+                    <button class="btn button__book">Book now</button>
+                  </div>
+               </div>
+                <figcaption class="main__name--img">
+                  <a class="nav__link--country" href="#">Norway</a>
+                </figcaption>
+              </figure>
+              <figure class="main__island col-3 col-m-6 col-s-12">
+               <div class="wrapper__destinations__img">
+                  <img
+                    class="destinations__img"
+                    src="./images/svg/island.svg"
+                    alt="island"
+                  />
+                  <div class="destinations__button--book">
+                    <button class="btn button__book">Book now</button>
+                  </div>
+               </div>
+                <figcaption class="main__name--img">
+                  <a class="nav__link--country" href="#">Island</a>
+                </figcaption>
+              </figure>
+              <div class="main__destinations--button">
+                <button class="btn button__switch--destinations">
+                  <svg class="icon__arrow--destinations">
+                    <use xlink:href="./images/sprite/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container main__container--sign">
+        <section class="main__sign">
+          <div class="row-sign">
+            <div class="main__sign--icon">
+              <svg class="icon__sign">
+                <use xlink:href="./images/sprite/sprite.svg#user"></use>
+              </svg>
+            </div>
+            <div class="main__sign--content">
+              <div class="discount">
+                Sign up and get 20% off your first booking
+              </div>
+              <div class="main__sign--button">
+                <button class="btn button__sign">Sign up</button>
+              </div>
+            </div>
+            <div class="main__sign--cross">
+              <button class="btn button__cross">
+                <svg class="icon__cross">
+                  <use xlink:href="./images/sprite/sprite.svg#cross"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
