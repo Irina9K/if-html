@@ -364,7 +364,7 @@ h2::after {
 .main__support,
 .main__communication,
 .main__booking,
-.main__reviews {
+.main__review {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -732,9 +732,9 @@ h2::after {
   text-align: left;
 }
 
-.main__name--img {
-  padding: 4% 0 11% 7%;
-}
+/*.main__name--img {*/
+/*  padding: 4% 0 11% 7%;*/
+/*}*/
 
 .main__name--hotel,
 .main__name--place {
@@ -1463,7 +1463,7 @@ h2::after {
   .main__support,
   .main__communication,
   .main__booking,
-  .main__reviews {
+  .main__review {
     align-items: center;
   }
 
