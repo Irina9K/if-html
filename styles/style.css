@@ -729,6 +729,7 @@ h2::after {
   align-items: flex-start;
   width: 100%;
   padding: 24px;
+  text-align: left;
 }
 
 .main__name--img {
@@ -759,6 +760,7 @@ h2::after {
 
 .person__from {
   color: #bfbfbf;
+  text-align: left;
 }
 
 .icon__person {
@@ -795,6 +797,8 @@ h2::after {
   border-radius: 8px;
   margin-bottom: 8px;
   color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   width: 48px;
   height: 32px;
