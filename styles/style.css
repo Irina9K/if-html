@@ -268,7 +268,6 @@ input[type="date"] {
   border-radius: 8px;
   outline: 0;
   outline-offset: 0;
-
 }
 
 .header__choice--city {
@@ -716,20 +715,23 @@ h2::after {
 .wrapper__name .main__name--img {
   position: absolute;
   font-size: 18px;
-  color: #ffffff;
+  color: transparent;
   font-weight: 400;
   top: 87%;
   left: 0;
   border: 0;
   width: 100%;
   height: 48px;
-  background-color: #383838b2;
+  background-color: transparent;
   padding: 16px 24px 11px 24px;
-  display: none;
+  /*display: none;*/
+  transition: 0.5s;
 }
 
 .wrapper__price:hover .main__name--img {
-  display: block;
+  /*display: block;*/
+  background-color: #383838b2;
+  color: #ffffff;
 }
 
 .wrapper__place {
