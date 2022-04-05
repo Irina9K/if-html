@@ -505,6 +505,8 @@ h2::after {
 .buttons {
   display: flex;
   justify-content: flex-start;
+  width:100%;
+  margin-left: 8px;
 }
 
 .btn__destinations {
@@ -683,7 +685,7 @@ h2::after {
 .main__ourika--parts {
   display: flex;
   flex-direction: column;
-  width: calc(33% - 11px);
+  width: calc(33% - 19px);
   margin-right: 14px;
   background-color: #eaf0f9;
   height: 760px;
@@ -691,7 +693,7 @@ h2::after {
 }
 
 .main__bali--parts {
-  margin-left: 0;
+  margin-left: 8px;
 }
 
 .main__ourika--parts {
@@ -833,7 +835,7 @@ h2::after {
   width: 45px;
   height: 45px;
   top: 23%;
-  left: 97%;
+  left: 95%;
 }
 
 .main__container--app {
@@ -864,6 +866,8 @@ h2::after {
   flex-flow: row wrap;
   align-items: flex-start;
   margin-top: 110px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .footer__about,
@@ -873,20 +877,9 @@ h2::after {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 0;
+  width: calc(33% - 21px);
 }
 
-.footer__about {
-  width: 193px;
-  margin-right: 217px;
-}
-
-.footer__property {
-  width: 133px;
-  margin-right: 283px;
-}
-.footer__support {
-  width: 250px;
-}
 
 .footer__item {
   display: block;
@@ -1033,7 +1026,7 @@ h2::after {
 
   .icon__arrow--reviews {
     top: 17%;
-    left: 95%;
+    left: 93%;
   }
 
   .footer__about,
@@ -1041,6 +1034,10 @@ h2::after {
   .footer__support {
     width: calc(33% - 50px);
     margin-right: 50px;
+  }
+
+  .footer__item {
+    padding-top: 15px;
   }
 }
 
@@ -1247,7 +1244,7 @@ h2::after {
     width: 40px;
     height: 40px;
     top: 48%;
-    left: 96%;
+    left: 95%;
     transform: translate(-50%, -50%);
   }
 
@@ -1265,6 +1262,7 @@ h2::after {
 
   .buttons {
     justify-content: space-around;
+    width: auto;
   }
 
   .btn__destinations:nth-child(1),
