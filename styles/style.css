@@ -176,8 +176,9 @@ a {
   height: 64px;
   position: relative;
   margin-top: 0;
-  border: 3px solid #f5bd41;
+  /*border: 3px solid #f5bd41;*/
   border-radius: 8px;
+  align-items: center;
 }
 
 .forms__check--in {
@@ -262,9 +263,12 @@ input[type="date"] {
   outline-offset: 0;
 }
 
-.container__forms--second .input__group--input:focus {
-  border: 0;
-  height: 56px;
+.container__forms--second:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  outline: 0;
+  outline-offset: 0;
+
 }
 
 .header__choice--city {
@@ -276,7 +280,7 @@ input[type="date"] {
 
 .header__choice--data {
   width: 100%;
-  height: 56px;
+  height: 64px;
   border-top: 3px solid #f3f3f4;
   border-bottom: 3px solid #f3f3f4;
 }
