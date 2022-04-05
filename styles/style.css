@@ -687,7 +687,7 @@ h2::after {
   align-items: flex-start;
 }
 
-.main__bali--parts{
+.main__bali--parts {
   margin-left: 0;
 }
 
@@ -828,6 +828,10 @@ h2::after {
   height: 45px;
   top: 23%;
   left: 97%;
+}
+
+.main__container--app {
+  display: none;
 }
 
 .footer__container {
@@ -995,7 +999,7 @@ h2::after {
     height: 980px;
   }
 
-  .wrapper__name .main__name--img{
+  .wrapper__name .main__name--img {
     top: 82%;
     height: 40px;
     font-size: 15px;
@@ -1476,7 +1480,7 @@ h2::after {
   }
 
   .switch__circle:focus,
-  .switch__circle:hover{
+  .switch__circle:hover {
     background-color: #333333;
   }
 
@@ -1671,6 +1675,7 @@ h2::after {
 
   .title_homes {
     margin-bottom: -8px;
+    margin-top: 15px;
   }
 
   .main__slowakia,
@@ -1788,22 +1793,22 @@ h2::after {
     display: none;
   }
 
-  .main__reviews{
-    height:732px;
+  .main__reviews {
+    height: 732px;
   }
 
-  .row__reviews .main__title{
+  .row__reviews .main__title {
     text-transform: capitalize;
-    margin-top: 23px;
+    margin-top: 14px;
     margin-bottom: -21px;
   }
 
-  .main__title span{
+  .main__title span {
     display: none;
   }
 
-  .main__bali--parts{
-    margin-left:0;
+  .main__bali--parts {
+    margin-left: 0;
     margin-right: 16px;
   }
 
@@ -1829,10 +1834,57 @@ h2::after {
     margin-bottom: 6px;
   }
 
-  .score__points{
+  .score__points {
     width: 38px;
     height: 28px;
     margin-bottom: 2px;
+  }
+
+  .main__container--app {
+    display: block;
+  }
+
+  .main__app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 106px;
+  }
+
+  .button__app .icon__cross {
+    width: 16px;
+    height: 16px;
+  }
+
+  .main__app--logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3077c6;
+    border-radius: 4px;
+    background-color: #3077c6;
+    width: 58px;
+    height: 58px;
+  }
+
+  .icon__logo--app {
+    width: 50px;
+    height: 10px;
+  }
+
+  .main__app--content {
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838;
+    width: 170px;
+  }
+
+  .button__install {
+    background-color: transparent;
+    color: #3077c6;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .footer {
