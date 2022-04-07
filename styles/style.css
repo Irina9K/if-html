@@ -427,8 +427,7 @@ h2::after {
 }
 
 .main__name--img
-/*.main__name--country */
-{
+/*.main__name--country */ {
   display: flex;
   flex-direction: column;
   font-size: 24px;
@@ -538,6 +537,19 @@ h2::after {
 
 .wrapper__destinations__img {
   position: relative;
+}
+
+.wrapper__destinations__img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 70px 0 #38383880 inset;
+  opacity: 0;
+}
+
+.wrapper__destinations__img:hover::before {
+  opacity: 1;
 }
 
 .destinations__img {
